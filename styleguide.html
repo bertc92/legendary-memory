@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Style Guide Template</title>
+  <title>Pennypacker Latex Solutions Revised Styleguide</title>
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/font.css" rel="stylesheet">
@@ -15,6 +15,7 @@
 <body>
 
   <h1>A Style Guide for Pennypacker Latex Solutions</h1>
+  <h2>Revised for P02</h2>
 
   <nav class="nav-main">
       <!-- <a class="nav-main-item" href="#interactive_elements">Interactive Elements</a>
@@ -22,7 +23,7 @@
       <a class="nav-main-item" href="#combined_elements">Combined Elements</a> -->
 
       <a class="nav-main-item" href="styleguide.html">Styleguide</a>
-      <a class="nav-main-item" href="wireframes.html">Wireframes</a>
+      <a class="nav-main-item" href="sitemap.html">Sitemap</a>
       <a class="nav-main-item" href="citations.html">Citations</a>
   </nav>
 
@@ -184,7 +185,7 @@
 
       <section>
         <h2>Main Navigation</h2>
-        <p>Styled in #4E5166 bg colour, block display and 0.3em 0.3em 0em 16% padding.</p>
+        <p>Styled in #414454 bg colour, block display and 0.3em 0.3em 0em 16% padding.</p>
         <p>Nav items use inline-block, 0.7em 0.7em padding, #FFFFFF bold text in 2.5em size. Transition is a 0.15 sec background-colour ease out into #7B80A0.</p>
 
         <h3>CSS selector:</h3>
@@ -316,19 +317,33 @@
         <p>Coloured div with text inside</p>
 
         <h3>CSS selector:</h3>
-        <p>.div-maincolour  .div-secondarycolour .div-thirdcolour</p>
+        <p>.div-maincolour  .div-secondarycolour .div-thirdcolour .div-fourthcolour</p>
 
         <h3>Sample code:</h3>
-        <code>
-          &lt;div class="div-maincolour"&gt;&lt;p&gt;#4E5166&lt;/p&gt; &lt;/div&gt;<br>
-          &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#7B80A0&lt;/p&gt;&lt;/div&gt; <br>
-          &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A7A9BA - Not used in P01 submission.&lt;/p&gt;&lt;/div&gt; <br>
-         </code>
-
-        <div class="div-maincolour"><p>#e4e852</p></div>
+        <code><pre>
+        &lt;div class="div-maincolour"&gt;&lt;p&gt;#E4E8F2&lt;/p&gt; &lt;/div&gt;
+        &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#7B80A0&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A7A9BA&lt;/p&gt;&lt;/div&gt; 
+		&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#FFB85A&lt;/p&gt;&lt;/div&gt;</pre></code>
+		<figure>
+        <div class="div-maincolour"><p>#e4e8f2</p></div>
+		<figcaption>Primary Colour</figcaption>
+		</figure>
+		
+		<figure>
         <div class="div-secondarycolour"><p>#7B80A0</p></div>
+		<figcaption>Secondary Colour</figcaption>
+		</figure>
+		
+		<figure>
         <div class="div-thirdcolour"><p>#414454</p></div>
-		<div class="div-fourthcolour"><p>#ffb85a</p></div>
+		<figcaption>Tertiary Colour</figcaption>
+		</figure>
+		
+		<figure>
+		<div class="div-fourthcolour"><p>#FFB85A</p></div>
+		<figcaption>Accent Colour</figcaption>
+		</figure>
       </section>
 
     </section>
