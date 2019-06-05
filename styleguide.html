@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Style Guide Template</title>
+
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/font.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1>A Style Guide for Pennypacker Latex Solutions</h1>
+
+  <nav class="nav-main">
+      <!-- <a class="nav-main-item" href="#interactive_elements">Interactive Elements</a>
+      <a class="nav-main-item" href="#text_elements">Text Elements</a>
+      <a class="nav-main-item" href="#combined_elements">Combined Elements</a> -->
+
+      <a class="nav-main-item" href="styleguide.html">Styleguide</a>
+      <a class="nav-main-item" href="wireframes.html">Wireframes</a>
+      <a class="nav-main-item" href="citations.html">Citations</a>
+  </nav>
+
+
+
+  <!-- INTERACTIVE ELEMENTS SECTION // -->
+  <section id="interactive_elements">
+
+    <!-- Default Button styling section -->
+    <section>
+
+      <h2>Navigation Button</h2>
+      <p>For the navigation bar.</p>
+
+      <h3>CSS selector:</h3>
+      <p>.button-nav</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="button-nav" href="#">Default Button</a>
+
+    </section>
+
+    <section>
+      <h2>In-text link</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.text-link</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="text-link"&gt;In-text Link&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a class="text-link" href="#">Praesent tortor augue</a>, finibus eu vehicula sit amet, fermentum vel nisl.
+    </section>
+
+    <section>
+      <h2>Submit/Reset Buttons</h2>
+
+      <h3>CSS selector:</h3>
+      <p>.button-form</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;a href="#" class="button-form"&gt;Default Button&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <a class="button-body" href="#">Submit</a>
+      <a class="button-body" href="#">Reset</a>
+    </section>
+
+    <section>
+      <h2>Text Input Field & Label</h2> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+
+      <h3>CSS selector:</h3>
+      <p>.text-label</p>
+      <p>.input-text</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;label for="sample" class="input-text"&gt;Text Label&lt;/label&gt;</code>
+      <code>&lt;input class="input-text"type ="text" id="sample" name="sample"&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <label for="sample" class="text-label"> Text Label</label>
+      <input class="input-text"type ="text" id="sample" name="sample">
+    </section>
+
+  </section>
+  <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+  <!-- TEXT ELEMENTS SECTION // -->
+  <section id="text_elements">
+
+    <section>
+      <h2>Headings</h2>
+      <p>Headings use Akzidenz-Grotesk Medium at 2 em, 1.75 em, and 1.5 em respectively for header levels.</p>
+
+      <h3>CSS selector:</h3>
+      <p>.text-h1</p>
+      <p>.text-h2</p>
+      <p>.text-h3</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;h1 class="text-h1"&gt;Header One&lt;/h1&gt;</code>
+
+      <code>&lt;h2 class="text-h2"&gt;Header Two&lt;/h2&gt;</code>
+
+      <code>&lt;h3 class="text-h3"&gt;Header Three&lt;/h3&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <h1 class="text-h1">Header One</h1>
+      <h2 class="text-h2">Header Two</h2>
+      <h3 class="text-h3">Header Three</h3>
+
+    </section>
+
+    <section>
+      <h2>Paragraphs</h2>
+      <p>Styled in 1rem size and Aksidenz-Grotesk Light.</p>
+
+      <h3>CSS selector:</h3>
+      <p>.text-p</p>
+
+      <h3>Sample code:</h3>
+      <code>&lt;p class="text-p"&gt;Paragraph Text&lt;/a&gt;</code>
+
+      <h3>Rendered element:</h3>
+      <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa erat, sodales nec diam a, maximus blandit elit. Ut dapibus ipsum nec arcu posuere, et cursus nunc cursus. Quisque id enim rhoncus, volutpat nulla et, tempus nibh. Nullam posuere, velit et pulvinar efficitur, sapien eros placerat urna, vel cursus libero mi eget turpis. Nunc scelerisque consectetur mi. Aliquam vitae leo at orci malesuada sodales. Vivamus eu nulla ac turpis tincidunt fermentum. Aliquam consequat ex massa, vitae ullamcorper elit tincidunt ac. Nulla volutpat eleifend ornare.</a>
+      </section>
+
+      <section>
+        <h2>Bulleted Lists</h2>
+        <p>Styled in default Disc style, 1.25em font size and 0.2em margin.</p>
+        <h3>CSS selector:</h3>
+        <p>.text-ul</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ul class="text-ul"&gt; &lt;li&gt;Text&lt;/li&gt; &lt;/ul&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <ul class="text-ul">
+          <li>Text</li>
+          <li>Text</li>
+          <li>Text</li>
+        </ul>
+
+
+
+      </section>
+
+      <section>
+        <h2>Numbered Lists</h2>
+        <p>Styled in default Decimal style, 1.25em font size and 0.2em margin.</p>
+
+        <h3>CSS selector:</h3>
+        <p>.text-ol</p>
+
+        <h3>Sample code:</h3>
+        <code>&lt;ol class="text-ol"&gt; &lt;li&gt;Text&lt;/li&gt; &lt;/ol&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <ol class="text-ol">
+          <li>Text</li>
+          <li>Text</li>
+          <li>Text</li>
+        </ol>
+      </section>
+
+    </section>
+    <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section id="combined_elements">
+
+      <section>
+        <h2>Main Navigation</h2>
+        <p>Styled in #4E5166 bg colour, block display and 0.3em 0.3em 0em 16% padding.</p>
+        <p>Nav items use inline-block, 0.7em 0.7em padding, #FFFFFF bold text in 2.5em size. Transition is a 0.15 sec background-colour ease out into #7B80A0.</p>
+
+        <h3>CSS selector:</h3>
+        <p>.nav-main  .nav-main-item</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;nav class="nav-main"&gt;
+           &lt;a href="#" class="nav-main-item"&gt;Home&lt;/a&gt;
+           &lt;a href="#" class="nav-main-item"&gt;Orders&lt;/a&gt;
+           &lt;a href="#" class="nav-main-item"&gt;About&lt;/a&gt;
+           &lt;a href="#" class="nav-main-item"&gt;Contact&lt;/a&gt;
+         &lt;/nav&gt;</code>
+
+        <h3>Rendered element:</h3>
+        <nav class="nav-main">
+         <a href="#" class="nav-main-item">Home</a>
+         <a href="#" class="nav-main-item">Orders</a>
+         <a href="#" class="nav-main-item">About</a>
+         <a href="#" class="nav-main-item">Contact</a>
+       </nav>
+      </section>
+
+      <section>
+        <h2>Product Listing</h2>
+        <p>Done using a flexbox wrap structure.</p>
+        <h3>CSS selector:</h3>
+        <p>.box  .box-nav .box-nav-item</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="box"&gt;
+           &lt;a href="#"&gt; &lt;img src="img/sample.png" alt="A Sample image"&gt; &lt;/a&gt;
+           &lt;p&gt;
+            &lt;Lorem Ipsum&gt;
+            &lt;/p&gt;
+         &lt;/div&gt;</code>
+        <h3>Rendered element:</h3>
+        <div class="box">
+          <!-- <a href="#" class="box-item-tab">Exports</a> -->
+          <!-- <a href="#" class="box-item-tab">Imports</a> -->
+
+
+          <div class="box-item">
+            <a href="#"><img src="img/sample.png" alt="A sample image"></a>
+            <p>Clowns-R-Us<br>
+            <strong>Balloon Set</strong><br>
+            Status: <strong>In Stock</strong><br>
+            $40/kg<br>
+            Vancouver, BC<br>
+            Canada</p>
+           </div>
+
+           <div class="box-item">
+             <a href="#"><img src="img/sample.png" alt="A sample image"></a>
+             <p>Clowns-R-Us<br>
+               <strong>Balloon Set</strong><br>
+               Status: <strong>In Stock</strong><br>
+               $40/kg<br>
+               Vancouver, BC<br>
+               Canada</p>
+           </div>
+
+             <div class="box-item">
+               <a href="#"><img src="img/sample.png" alt="A sample image"></a>
+               <p>Clowns-R-Us<br>
+                 <strong>Balloon Set</strong><br>
+                 Status: <strong>In Stock</strong><br>
+                 $40/kg<br>
+                 Vancouver, BC<br>
+                 Canada</p>
+             </div>
+
+             <div class="box-item">
+                 <a href="#"><img src="img/sample.png" alt="A sample image"></a>
+                 <p>Clowns-R-Us<br>
+                   <strong>Balloon Set</strong><br>
+                   Status: <strong>In Stock</strong><br>
+                   $40/kg<br>
+                   Vancouver, BC<br>
+                   Canada</p>
+             </div>
+
+             <div class="box-item">
+                   <a href="#"><img src="img/sample.png" alt="A sample image"></a>
+                   <p>Clowns-R-Us<br>
+                     <strong>Balloon Set</strong><br>
+                     Status: <strong>In Stock</strong><br>
+                     $40/kg<br>
+                     Vancouver, BC<br>
+                     Canada</p>
+             </div>
+
+      </div>
+
+
+
+      </section>
+
+      <section>
+        <h2>Grid Structure</h2>
+
+        <p>Done using a flexbox wrap structure.</p>
+        <h3>CSS selector:</h3>
+        <p>.box  .box-nav .box-nav-item</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="box"&gt;
+          &lt;div class="box-grid-header"&gt;&lt;p&gt;Header/Navbar&lt;/p&gt; &lt;/div&gt;<br>
+          &lt;div class="box-grid-body"&gt;&lt;p&gt;Body&lt;/p&gt;&lt;/div&gt; <br>
+          &lt;div class="box-grid-footer"&gt;&lt;p&gt;Footer&lt;/p&gt;&lt;/div&gt; <br>
+          &lt;/div&gt;
+         </code>
+
+
+<h3>Rendered element:</h3>
+        <div class="box">
+          <div class="box-grid-header"><p>Header/Navbar</p></div>
+          <div class="box-grid-body"><p>Body</p></div>
+          <div class="box-grid-footer"><p>Footer</p></div>
+          <!-- <div class="box-grid-header">Header/Navbar</div> -->
+        </div>
+      </section>
+
+      <section>
+        <h2>Colour Swatches</h2>
+
+        <p>Coloured div with text inside</p>
+
+        <h3>CSS selector:</h3>
+        <p>.div-maincolour  .div-secondarycolour .div-thirdcolour</p>
+
+        <h3>Sample code:</h3>
+        <code>
+          &lt;div class="div-maincolour"&gt;&lt;p&gt;#4E5166&lt;/p&gt; &lt;/div&gt;<br>
+          &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#7B80A0&lt;/p&gt;&lt;/div&gt; <br>
+          &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A7A9BA - Not used in P01 submission.&lt;/p&gt;&lt;/div&gt; <br>
+         </code>
+
+        <div class="div-maincolour"><p>#4E5166</p></div>
+        <div class="div-secondarycolour"><p>#7B80A0</p></div>
+        <div class="div-thirdcolour"><p>#A7A9BA - Not used in P01 submission.</p></div>
+      </section>
+
+    </section>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+  </body>
+  </html>
