@@ -1,0 +1,15 @@
+/* declaring fonts for use on ths page*/
+
+@font-face{
+  font-family: 'AkzidenzGrotesk';
+  font-weight: bold;
+  font-style: normal;
+  src: url('../fonts/AkzidenzGrotesk-Medium.otf') format("opentype");
+}
+
+@font-face{
+  font-family: 'AkzidenzGrotesk';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/AkzidenzGrotesk-Light.otf') format("opentype");
+}

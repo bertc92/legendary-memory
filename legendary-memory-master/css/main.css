@@ -1,0 +1,205 @@
+/*
+  STYLE GUIDE STYLING
+  Default styling for the style guide
+*/
+body {
+  font-family: 'AkzidenzGrotesk',sans-serif;
+  padding: 1rem;
+  font-color:#000000;
+}
+
+section:not([id]) {
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 1px solid #333;
+}
+
+section p {
+  /* margin-top: 0; */
+}
+
+section code {
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+}
+
+img {
+  /* width:80%; */
+  max-width:80%;
+}
+
+
+/*
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the navigation button */
+.button-nav {
+  display: inline-block;
+  padding: 0.7em 0.3em;
+  color: #FFFFFF;
+  background-color: #414454;
+
+  font-size: 1.3em;
+  font-weight:bold;
+
+
+  text-decoration: none;
+  -webkit-transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s ease-out;
+}
+
+.button-nav:hover, .button-nav:focus {
+  background-color: #7B80A0;
+}
+
+
+/* Styling for the body buttons */
+.button-body {
+  display: inline-block;
+  padding: 0.3em 0.35em;
+  color: #414454;
+  /* background-color: #414454; */
+
+  font-size: 1.1em;
+  font-weight:normal;
+
+
+  /* text-decoration: NONE; */
+  -webkit-transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s ease-out;
+}
+
+.button-body:hover, .button-body:focus {
+  background-color: #7B80A0;
+  color: #FFFFFF;
+}
+
+.button-body:active{
+  background-color:red;
+}
+
+
+/* Styling for in-text links */
+.text-link{
+  font-weight:bold;
+  color:#414454;
+  text-decoration:none;
+
+transition: color 0.15s ease-out;
+}
+
+.text-link:hover, .button-body:focus{
+  color:#7B80A0;
+}
+
+.text-link:active{
+  color:#C5C5C5;
+}
+
+/* Styling for text labels/fields */
+
+.text-label{
+  margin: 0.3em;
+}
+
+.input-text{
+  /* border-radius:0.2em; */
+  border-width:0.125em;
+  border-color:#d4d4d4;
+  padding:0.15em 0.15em 0.15em 0.05em;
+  /* border-top-color:white;
+  border-left-color:white; */
+}
+
+
+/*
+  TEXT ELEMENTS -------------------
+*/
+
+.text-h1{
+	font-size:2em;
+}
+
+.text-h2{
+  font-size:1.75em;
+}
+
+.text-h3{
+  font-size:1.5em;
+}
+
+.text-ul{
+  list-style-type:disc;
+  margin:0.2em;
+  font-size:1.15em;
+}
+
+.text-ol{
+  list-style-type:decimal;
+  margin:0.2em;
+  font-size:1.15em;
+}
+
+
+
+/*
+  COMBINED ELEMENTS -------------------
+*/
+
+
+.nav-main{ /*https://medium.com/swlh/understanding-css-display-none-block-inline-and-inline-block-63f6510df93 */
+  background-color:#414454;
+  display:block;
+  padding:0.3em 0.3em 0em 16%;
+
+}
+
+.nav-main-item{
+  display:inline-block;
+  padding: 0.7em 0.7em;
+  color: #FFFFFF;
+  font-weight:bold;
+  text-decoration:none;
+  font-size:2.5em;
+
+
+  transition:background-color 0.15s ease-out;
+}
+.nav-main-item:hover, .nav-main-item:focus{
+  background-color: #7B80A0;
+}
+
+.div-maincolour{
+  display:block;
+  background-color:#E4E8f2;
+  width:7em;
+  height:5em;
+  text-align:right;
+  color:#FFFFFF;
+}
+.div-secondarycolour{
+  display:block;
+  background-color:#7B80A0;
+  width:7em;
+  height:5em;
+  text-align:right;
+  color:#FFFFFF;
+}
+.div-thirdcolour{
+  display:block;
+  background-color:#414454;
+  width:7em;
+  height:5em;
+  text-align:right;
+  color:#FFFFFF;
+}
+
+.div-fourthcolour{
+  display:block;
+  background-color:#FFB85A;
+  width:7em;
+  height:5em;
+  text-align:right;
+  color:#FFFFFF;
+}
