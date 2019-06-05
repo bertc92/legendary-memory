@@ -38,7 +38,7 @@ img {
   display: inline-block;
   padding: 0.7em 0.3em;
   color: #FFFFFF;
-  background-color: #4E5166;
+  background-color: #414454;
 
   font-size: 1.3em;
   font-weight:bold;
@@ -58,8 +58,8 @@ img {
 .button-body {
   display: inline-block;
   padding: 0.3em 0.35em;
-  color: #4E5166;
-  /* background-color: #4E5166; */
+  color: #414454;
+  /* background-color: #414454; */
 
   font-size: 1.1em;
   font-weight:normal;
@@ -83,7 +83,7 @@ img {
 /* Styling for in-text links */
 .text-link{
   font-weight:bold;
-  color:#4E5166;
+  color:#414454;
   text-decoration:none;
 
 transition: color 0.15s ease-out;
@@ -149,7 +149,7 @@ transition: color 0.15s ease-out;
 
 
 .nav-main{ /*https://medium.com/swlh/understanding-css-display-none-block-inline-and-inline-block-63f6510df93 */
-  background-color:#4E5166;
+  background-color:#414454;
   display:block;
   padding:0.3em 0.3em 0em 16%;
 
@@ -172,7 +172,7 @@ transition: color 0.15s ease-out;
 
 .div-maincolour{
   display:block;
-  background-color:#4E5166;
+  background-color:#E4E8f2;
   width:7em;
   height:5em;
   text-align:right;
@@ -188,7 +188,16 @@ transition: color 0.15s ease-out;
 }
 .div-thirdcolour{
   display:block;
-  background-color:#A7A9BA;
+  background-color:#414454;
+  width:7em;
+  height:5em;
+  text-align:right;
+  color:#FFFFFF;
+}
+
+.div-fourthcolour{
+  display:block;
+  background-color:#FFB85A;
   width:7em;
   height:5em;
   text-align:right;
