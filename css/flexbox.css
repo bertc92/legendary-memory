@@ -13,6 +13,8 @@
   flex-grow:1;
   flex-shrink:1;
   flex-basis:100%;
+  padding:10em 0 10em 0;
+  border-bottom: 1px solid black;
   /* align-self:flex-start; */
 
   /* padding:10%; */
@@ -25,6 +27,7 @@
   flex-shrink:1;
   flex-basis:50%;
   max-width:50%;
+  /* min-width:50%; */
   /* width:100%; */
   /* flex-basis:20%; */
   /* align-self:flex-start; */
