@@ -94,11 +94,13 @@
   text-align:center;
   flex: 1 1 100%;
   background-color:#dedcff;
-  margin-top:1%;
+  position:relative;
+  clear:both;
 }
 
 .box-div-wrapper{
 	margin-top:1%;
 	margin-left:5%;
 	margin-right:5%;
+	margin-bottom:3em;
 }
