@@ -4,14 +4,15 @@
 */
 body {
   font-family: 'AkzidenzGrotesk',sans-serif;
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin:0;
   color:#000000;    
 }
 
-section:not([id]) {
-  margin: 1em 0;
-  padding: 0.5em 0;
-  border-top: 1px solid #333;
+section:not([class]) {
+  /* margin: 1em 0; */
+  /* padding: 0.5em 0; */
+  /* border-top: 1px solid #333; */
 }
 
 section p {
@@ -147,27 +148,40 @@ transition: color 0.15s ease-out;
   font-size:1.15em;
 }
 
+.section-main{
+	border-top:none;
+}
+
+footer p{
+	margin:0;
+}
+
 
 
 /*
   COMBINED ELEMENTS -------------------
 */
 
+.img-banner{
+	max-width:100%;
+}
 
 .nav-main{ /*https://medium.com/swlh/understanding-css-display-none-block-inline-and-inline-block-63f6510df93 */
   background-color:#414454;
   display:block;
-  padding:0.3em 0.3em 0em 16%;
-
+  /* padding:0.3em 0.3em 0em 0em; */
+  position: sticky;
+  top:0px;
 }
 
 .nav-main-item{
   display:inline-block;
-  padding: 0.7em 0.7em;
+  /* padding: 0.3em 0.3em; */
   color: #FFFFFF;
   font-weight:bold;
   text-decoration:none;
-  font-size:2.5em;
+  font-size:1.5em;
+  padding: 0em 1em 0em 1em;
 
 
   transition:background-color 0.15s ease-out;
