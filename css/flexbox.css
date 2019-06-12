@@ -13,13 +13,17 @@
   flex-grow:1;
   flex-shrink:1;
   flex-basis:100%;
-  padding:10em 0 10em 0;
   border-bottom: 1px solid black;
   /* align-self:flex-start; */
 
   /* padding:10%; */
 
   /*shorthand is flex:1 1 auto;*/
+}
+
+.box-item-section{
+	padding:10em 0 10em 0;
+	flex: 1 1 auto;
 }
 
 .box-item-image{
@@ -106,4 +110,16 @@
 	margin-left:5%;
 	margin-right:5%;
 	margin-bottom:3em;
+}
+
+/* breakpoint stuff */
+
+@media(min-width:1200px)
+{
+	
+}
+
+@media(min-width:600px)
+{
+	
 }
