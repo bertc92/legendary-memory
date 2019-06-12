@@ -22,7 +22,7 @@
 }
 
 .box-item-section{
-	padding:10em 0 10em 0;
+	margin:10em 0 10em 0;
 	flex: 1 1 auto;
 }
 
@@ -48,7 +48,7 @@
 .box-grid-header{
 	flex:1 1 100%;
 	position:sticky;
-	top:0;
+	top:0px;
 }
 
 
@@ -108,11 +108,15 @@
 }
 
 .box-div-wrapper{
+	display:flex;
+	flex-direction:column;
+	flex:1 1 auto;
 	margin-top:1%;
 	margin-left:5%;
 	margin-right:5%;
 	margin-bottom:3em;
 }
+
 
 /* breakpoint stuff */
 
