@@ -47,6 +47,8 @@
 
 .box-grid-header{
 	flex:1 1 100%;
+	position:sticky;
+	top:0;
 }
 
 
