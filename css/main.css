@@ -2,10 +2,32 @@
   STYLE GUIDE STYLING
   Default styling for the style guide
 */
+
+/*
+font-family: conglomerate,serif;
+font-weight: 500;
+font-style: normal;
+
+font-family: conglomerate,serif;
+font-weight: 600;
+font-style: normal;
+
+font-family: merel,sans-serif;
+font-weight: 400;
+font-style: normal;
+
+
+font-family: merel, sans-serif;
+font-weight: 500;
+font-style: normal;
+*/
+
 body {
-  font-family: 'AkzidenzGrotesk',sans-serif;
-  padding: 1rem;
-  color:#000000;    
+    font-family: merel,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+    color:#000000;    
 }
 
 section:not([id]) {
@@ -42,13 +64,13 @@ img {
 /* Styling for the navigation button */
 .button-nav {
   display: inline-block;
-  padding: 0.7em 0.3em;
+  padding: 0.7em 0.5em;
   color: #FFFFFF;
-  background-color: #414454;
+  background-color: #D6C3A9A6; /*hex representation for 65% transparent - is A6*/
 
-  font-size: 1.3em;
-  font-weight:bold;
-
+  font-size: 2em;
+  font-weight: 500;
+  text-transform: uppercase;
 
   text-decoration: none;
   -webkit-transition: background-color 0.15s ease-out;
@@ -56,51 +78,49 @@ img {
 }
 
 .button-nav:hover, .button-nav:focus {
-  background-color: #7B80A0;
+  background-color: #A15442;
 }
-
-
-/* Styling for the body buttons */
-.button-body {
-  display: inline-block;
-  padding: 0.3em 0.35em;
-  color: #414454;
-  /* background-color: #414454; */
-
-  font-size: 1.1em;
-  font-weight:normal;
-
-
-  /* text-decoration: NONE; */
-  -webkit-transition: background-color 0.15s ease-out;
-  transition: background-color 0.15s ease-out;
-}
-
-.button-body:hover, .button-body:focus {
-  background-color: #7B80A0;
-  color: #FFFFFF;
-}
-
-.button-body:active{
-  background-color:red;
-}
-
 
 /* Styling for in-text links */
 .text-link{
-  font-weight:bold;
-  color:#414454;
+  font-weight:500;
+  color:#E0865C;
   text-decoration:none;
 
 transition: color 0.15s ease-out;
 }
 
 .text-link:hover, .button-body:focus{
-  color:#7B80A0;
+  color:#A15442;
 }
 
 .text-link:active{
-  color:#C5C5C5;
+  color:#D6C3A9;
+}
+
+/* Styling for the body buttons */
+.button-body {
+  display: inline-block;
+  background-image: linear-gradient(#E0865C, #A34C35);
+ border-radius: 0.12em;
+  padding: 0.4em 1.3em 0.6em 1.3em;
+  color: white;
+  text-align: center;
+  font-weight:500;
+  text-transform: capitalize;
+  text-decoration: NONE; 
+    
+  -webkit-transition: background-image 0.2s ease-out;
+  transition: background-image 0.15s ease-out;
+}
+
+.button-body:hover, .button-body:focus {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+.button-body:active{
+  background-color:red;
 }
 
 /* Styling for text labels/fields */
