@@ -33,15 +33,14 @@
 
 .text-overlay {
     color: white;
-    position: absolute; */
-     top: 25%; 
-     right: 20%; 
+    position: absolute; 
+     top: 20%; 
+     right: 30%; 
     transform: translate(50%, 40%);
     /* position: relative; */
     /* align-self: flex-end; */
     text-align: right;
-    right: 3em;
-	top:65%;
+
 }
 
 .hero-image {
