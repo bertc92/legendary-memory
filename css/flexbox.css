@@ -31,7 +31,6 @@
 	flex: 1 1 auto;
 }
 
-.box-item-image{
 .text-overlay{
     color:white;
     position:absolute;
@@ -39,6 +38,8 @@
     right:20%;
     transform: translate(50%, 40%);
 }
+
+.box-item-image{
   flex-grow:1;
   flex-shrink:1;
   flex-basis:100%;
@@ -111,11 +112,12 @@
 .box-grid-item2col{
 	flex:1 1 50%;
 	margin:0 1em 0 0;
+    padding: 2em;
 }
 
 .box-grid-body3col{
 	display:flex;
-	flex-display:row;
+	flex:row;
 }
 
 .box-grid-item3col{
@@ -160,12 +162,9 @@
 }
 
 
+
 /* breakpoint stuff */
 
-@media(min-width:1200px)
-{
-
-}
 
 @media(min-width:600px)
 {
