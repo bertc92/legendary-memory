@@ -4,8 +4,8 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Pennypacker Latex Solutions Revised Styleguide</title>
-
+  <title>Indonesian Massage Revised Styleguide</title>
+  <link rel="stylesheet" href="https://use.typekit.net/ujm7lkp.css">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/font.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
@@ -13,6 +13,8 @@
 </head>
 
 <body>
+  <h2>Revised for P02</h2>
+  <h1>A Style Guide for Indonesian Massage</h1>
   <nav class="nav-main">
       <!-- <a class="nav-main-item" href="#interactive_elements">Interactive Elements</a>
       <a class="nav-main-item" href="#text_elements">Text Elements</a>
@@ -67,7 +69,7 @@
       <h2>Submit/Reset Buttons</h2>
 
       <h3>CSS selector:</h3>
-      <p>.button-form</p>
+      <p>.button-body</p>
 
       <h3>Sample code:</h3>
       <code>&lt;a href="#" class="button-form"&gt;Default Button&lt;/a&gt;</code>
@@ -78,24 +80,79 @@
     </section>
 
     <section>
-      <h2>Text Input Field & Label</h2> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+      <h2>Text Input Field and Label</h2> <!-- https://codepen.io/andreasstorm/pen/gKGbxo -->
 
       <h3>CSS selector:</h3>
       <p>.text-label</p>
-      <p>.input-text</p>
+      <p>.field-input</p>
 
       <h3>Sample code:</h3>
       <code>&lt;label for="sample" class="input-text"&gt;Text Label&lt;/label&gt;</code>
       <code>&lt;input class="input-text"type ="text" id="sample" name="sample"&gt;</code>
 
       <h3>Rendered element:</h3>
-      <label for="sample" class="text-label"> Text Label</label>
-      <input class="input-text"type ="text" id="sample" name="sample">
-    </section>
-
+             
+         <label for="inp" class="inp">
+              <input type="text" id="input-firstName" placeholder="&nbsp;">
+              <span class="label">First Name</span>
+              <span class="border"></span>
+        </label>
+        <label for="inp" class="inp">
+              <input type="text" id="input-lastName" placeholder="&nbsp;">
+              <span class="label">Last Name</span>
+              <span class="border"></span>
+        </label>
+        <label for="inp" class="inp">
+              <input type="text" id="input-email" placeholder="&nbsp;">
+              <span class="label">E-mail</span>
+              <span class="border"></span>
+        </label>
+       
+<!--selsect drop https://codepen.io/miniven/pen/ZJydge -->   
+            <div class="select-box">
+              <div class="select-box__current" tabindex="1">
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">Duration</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">30 minutes</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">45 minutes</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">1 hour</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">1.30 hour</p>
+                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+              </div>
+              <ul class="select-box__list">
+                    <li>
+                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Duration</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">30 minutes</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">45 minutes</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">1 hour</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">1.30 hours</label>
+                    </li>
+              </ul>
+            </div>   <!-- end of select drop group-->
+      </section>
   </section>
   <!-- // INTERACTIVE ELEMENTS SECTION END -->
-
 
 
   <!-- TEXT ELEMENTS SECTION // -->
@@ -103,7 +160,7 @@
 
     <section>
       <h2>Headings</h2>
-      <p>Headings use Akzidenz-Grotesk Medium at 2 em, 1.75 em, and 1.5 em respectively for header levels.</p>
+      <p>Headings use Conglomerate Demi and Medium at 3 em, 2.25 em, and 1.75 em respectively for header levels.</p>
 
       <h3>CSS selector:</h3>
       <p>.text-h1</p>
@@ -126,7 +183,7 @@
 
     <section>
       <h2>Paragraphs</h2>
-      <p>Styled in 1rem size and Aksidenz-Grotesk Light.</p>
+      <p>Styled in 1rem size and Merel Light.</p>
 
       <h3>CSS selector:</h3>
       <p>.text-p</p>
@@ -160,7 +217,7 @@
 
       <section>
         <h2>Numbered Lists</h2>
-        <p>Styled in default Decimal style, 1.25em font size and 0.2em margin.</p>
+        <p>Styled in Decimal colored style, 1.15em font size and 0.2em margin.</p>
 
         <h3>CSS selector:</h3>
         <p>.text-ol</p>
@@ -186,8 +243,8 @@
 
       <section>
         <h2>Main Navigation</h2>
-        <p>Styled in #414454 bg colour, block display and 0.3em 0.3em 0em 16% padding.</p>
-        <p>Nav items use inline-block, 0.7em 0.7em padding, #FFFFFF bold text in 2.5em size. Transition is a 0.15 sec background-colour ease out into #7B80A0.</p>
+        <p>Styled in #D6C3A9 bg colour with 65% opacity , block display and 0.3em 0.3em 0em 16% padding.</p>
+        <p>Nav items use inline-block, 0.7em 1.4em padding, #FFFFFF bold text in 2.5em size. Transition is a 0.15 sec background-colour ease out into #A15442.</p>
 
         <h3>CSS selector:</h3>
         <p>.nav-main  .nav-main-item</p>
@@ -265,29 +322,45 @@
 
         <h3>Sample code:</h3>
         <code><pre>
-        &lt;div class="div-maincolour"&gt;&lt;p&gt;#E4E8F2&lt;/p&gt; &lt;/div&gt;
-        &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#7B80A0&lt;/p&gt;&lt;/div&gt;
-        &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A7A9BA&lt;/p&gt;&lt;/div&gt; 
-		&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#FFB85A&lt;/p&gt;&lt;/div&gt;</pre></code>
+        &lt;div class="div-maincolour"&gt;&lt;p&gt;#E0D4B8&lt;/p&gt; &lt;/div&gt;
+        &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#2F1D0C&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A15442&lt;/p&gt;&lt;/div&gt; 
+		&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#E0865C&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-fourthcolour"&gt;&lt;p&gt;#91A491&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-fourthcolour"&gt;&lt;p&gt;#424942&lt;/p&gt;&lt;/div&gt;</pre></code>
+          
+        <div class="colors">
 		<figure>
-        <div class="div-maincolour"><p>#e4e8f2</p></div>
+        <div class="div-maincolour"><p>#E0D4B8</p></div>
 		<figcaption>Primary Colour</figcaption>
 		</figure>
 		
 		<figure>
-        <div class="div-secondarycolour"><p>#7B80A0</p></div>
+        <div class="div-secondarycolour"><p>#2F1D0C</p></div>
 		<figcaption>Secondary Colour</figcaption>
 		</figure>
 		
 		<figure>
-        <div class="div-thirdcolour"><p>#414454</p></div>
+        <div class="div-thirdcolour"><p>#A15442</p></div>
 		<figcaption>Tertiary Colour</figcaption>
 		</figure>
 		
 		<figure>
-		<div class="div-fourthcolour"><p>#FFB85A</p></div>
+		<div class="div-fourthcolour"><p>#E0865C</p></div>
 		<figcaption>Accent Colour</figcaption>
 		</figure>
+          
+          <figure>
+		<div class="div-fifththcolour"><p>#91A491</p></div>
+		<figcaption>Accent Colour</figcaption>
+		</figure>
+            
+            <figure>
+		<div class="div-sixthcolour"><p>#424942</p></div>
+		<figcaption>Accent Colour</figcaption>
+		</figure>
+            
+          </div>
       </section> <!--color swatches section end-->
 
     </section>
