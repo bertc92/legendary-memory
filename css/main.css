@@ -233,13 +233,15 @@ footer p{
 }
 
 .form-container{
-	/* flex-direction: row; */
+	display:flex;
+	flex-direction: column;
 	/* flex-wrap: nowrap; */
-	justify-content:space-evenly;
+	justify-content:flex-end;
 }
 
 .form-item{
-	flex:1 1 20%;
+	flex:1 1 100%;
+	/* align-self:flex-end; */
 	margin:1em 0 1em 0;
 }
 
@@ -253,8 +255,13 @@ footer p{
 	}
 }
 
+/* placeholder stuff */
 
-
+.placeholderimg
+{
+	background-color:yellow;
+	padding:10em 5em 10em 5em;
+}
 
 
 
