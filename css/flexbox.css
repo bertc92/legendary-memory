@@ -32,6 +32,13 @@
 }
 
 .box-item-image{
+.text-overlay{
+    color:white;
+    position:absolute;
+    top:25%;
+    right:20%;
+    transform: translate(50%, 40%);
+}
   flex-grow:1;
   flex-shrink:1;
   flex-basis:100%;
