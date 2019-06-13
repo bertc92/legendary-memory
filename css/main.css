@@ -9,21 +9,26 @@
   STYLE GUIDE STYLING
   Default styling for the style guide
 */
+
+html{
+    /*16px para with 1.6em line height*/
+    font-size:1em;
+    line-height: 1.6em; 
+    background:  #FFFFFD; /*bg color*/
+}
+
 body {
-  font-family: 'AkzidenzGrotesk',sans-serif;
-  /* padding: 1rem; */
-  margin:0;
-  color:#000000;    
+    font-family: merel,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+    color:#000000;
 }
 
 section:not([class]) {
   /* margin: 1em 0; */
   /* padding: 0.5em 0; */
   /* border-top: 1px solid #333; */
-}
-
-section p {
-  /* margin-top: 0; */
 }
 
 section code {
@@ -36,6 +41,7 @@ img {
   max-width:80%;
 }
 
+/*sitemap.html*/
 #citemap-img{
     display: block;
     padding-top: 1.5rem;
@@ -49,81 +55,261 @@ img {
 
 /* Styling for the navigation button */
 .button-nav {
-  display: inline-block;
-  padding: 0.7em 0.3em;
-  color: #FFFFFF;
-  background-color: #414454;
+      display: inline-block;
+      padding: 0.7em 0.5em;
+      color: #FFFFFF;
+      background-color: #D6C3A9A6; /*hex representation for 65% transparent - is A6*/
 
-  font-size: 1.3em;
-  font-weight:bold;
+      font-size: 1.125em;
+      line-height: 1.22222222em
+      font-weight: 500;
+      text-transform: uppercase;
 
-
-  text-decoration: none;
-  -webkit-transition: background-color 0.15s ease-out;
-  transition: background-color 0.15s ease-out;
+      text-decoration: none;
+      -webkit-transition: background-color 0.15s ease-out;
+      transition: background-color 0.15s ease-out;
 }
 
-.button-nav:hover, .button-nav:focus {
-  background-color: #7B80A0;
+.button-nav:hover {
+    background-color: #A15442;
 }
-
-
-/* Styling for the body buttons */
-.button-body {
-  display: inline-block;
-  padding: 0.3em 0.35em;
-  color: #414454;
-  /* background-color: #414454; */
-
-  font-size: 1.1em;
-  font-weight:normal;
-
-
-  /* text-decoration: NONE; */
-  -webkit-transition: background-color 0.15s ease-out;
-  transition: background-color 0.15s ease-out;
-}
-
-.button-body:hover, .button-body:focus {
-  background-color: #7B80A0;
-  color: #FFFFFF;
-}
-
-.button-body:active{
-  background-color:red;
-}
-
 
 /* Styling for in-text links */
 .text-link{
-  font-weight:bold;
-  color:#414454;
-  text-decoration:none;
-
-transition: color 0.15s ease-out;
+      font-weight:500;
+      color:#E0865C;
+      text-decoration:none;
+      transition: color 0.15s ease-out;
 }
 
-.text-link:hover, .button-body:focus{
-  color:#7B80A0;
+.text-link:hover{
+    color:#A15442;
 }
 
 .text-link:active{
-  color:#C5C5C5;
+    color:#D6C3A9;
 }
 
-/* Styling for text labels/fields */
+/* Styling for the body buttons */
+.button-body {
+      display: inline-block;
+      background-image: linear-gradient(#E0865C, #A34C35);
+      border-radius: 0.12em;
+      padding: 0.4em 1.3em 0.6em 1.3em;
+      color: white;
+      font-size: 1em;
+      line-height:normal;
+      text-align: center;
+      font-weight:500;
+      text-transform: capitalize;
+      text-decoration: NONE; 
 
-.text-label{
-  margin: 0.3em;
+      -webkit-transition: all 0.15s ease-out;
+      transition: all 0.15s ease-out;
 }
 
-.input-text{
-  /* border-radius:0.2em; */
-  border-width:0.125em;
-  border-color:#d4d4d4;
-  padding:0.15em 0.15em 0.15em 0.05em;
-  /* border-top-color:white;
-  border-left-color:white; */
+.button-body:hover{
+     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+     background-image: linear-gradient(to left, #E0865C, #A34C35);
+}
+
+.button-body:active{
+    color: #54402B;
+    transform: translateY(1px);
+}
+
+
+/* Styling for text labels/fields https://codepen.io/andreasstorm/pen/gKGbxo*/
+.inp {
+      display: inline-block;
+      box-sizing:border-box;
+      position: relative;
+      margin: 1.5em;
+      width: 100%;
+      max-width: 280px;
+  
+}
+
+/*initial hint*/
+.inp .label {      
+      position: absolute;
+      top: 16px;
+      left: 0;
+      font-size: 1em;
+      color: #E0865C;
+      font-weight: 400;
+      transform-origin: 0 0;
+      transition: all 0.2s ease;
+}
+.inp .border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background: #E0865C;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      transition: all 0.15s ease;
+}
+.inp input {
+      -webkit-appearance: none;
+      width: 100%;
+      border: 0;
+      font-family: inherit;
+      padding: 12px 0;
+      height: 48px;
+      font-size: 1em;
+      font-weight: 500;
+      border-bottom: 2px solid #E0D4B8;
+      background: none;
+      color: #2F1D0C;
+      transition: all 0.15s ease;
+}
+.inp input:hover {
+    background: rgba(224, 212, 184, 0.15);
+}
+
+.inp input:not(:placeholder-shown) + span {
+      color: #c6af7a;
+      transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+      background: none;
+      outline: none;
+}
+.inp input:focus + span {
+      color: #E0865C;
+      transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus + span + .border {
+    transform: scaleX(1);
+}
+
+
+/*styling for drop down field  Adapted from: https://codepen.io/miniven/pen/ZJydge*/    
+.select-box {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  font-size: 18px;
+  color: #60666d;
+}
+
+@media (max-width: 500px) {
+  .select-box {
+   width: 70%;
+   padding: 1em;
+  }
+  .select-box__option{
+     width: 90%;
+      
+  }
+}
+
+.select-box__current {
+  border-bottom: 2px solid #E0D4B8;
+  cursor: pointer;
+  outline: none;
+  color:#E0865C;
+}
+
+.select-box__current:focus + .select-box__list {
+  opacity: 1;
+  -webkit-animation-name: none;
+          animation-name: none;
+}
+
+.select-box__current:focus + .select-box__list .select-box__option {
+    cursor: pointer;
+}
+
+.select-box__current:hover {
+    background: rgba(224, 212, 184, 0.15);
+}
+
+.select-box__current:focus .select-box__icon {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+          transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 20px;
+      opacity: 0.3;
+      transition: 0.2s ease;
+}
+
+.select-box__value {
+    display: flex;
+}
+
+.select-box__input {
+    display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+    display: block;
+}
+
+.select-box__input-text {
+      display: none;
+      width: 100%;
+      margin-bottom: 10px;
+}
+
+.select-box__list {
+      position: absolute;
+      width: 100%;
+      padding: 0;
+      list-style: none;
+      opacity: 0;
+      -webkit-animation-name: HideList;
+              animation-name: HideList;
+      -webkit-animation-duration: 0.5s;
+              animation-duration: 0.5s;
+      -webkit-animation-delay: 0.5s;
+              animation-delay: 0.5s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-timing-function: step-start;
+              animation-timing-function: step-start;
+      box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+}
+.select-box__option {
+      display: block;
+      padding: 0.6em;
+      background-color: #fff;
+}
+.select-box__option:hover, .select-box__option:focus {
+      color:#E0865C;
+      background: #f7efde;
+}
+
+@-webkit-keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes HideList {
+  from {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
 }
 
 
@@ -132,33 +318,69 @@ transition: color 0.15s ease-out;
 */
 
 .text-h1{
-	font-size:2em;
+    font-family: conglomerate,serif;
+    font-weight: 600;
+	font-size:3rem;
+    line-height: 1.05rem;
 }
 
 .text-h2{
-  font-size:1.75em;
+    font-family: conglomerate,serif;
+    font-weight: 600;
+    font-size:2.25rem;
+    line-height: 1.25rem;
 }
 
 .text-h3{
-  font-size:1.5em;
+    font-family: conglomerate,serif;
+    font-weight: 500;
+    font-size:1.75rem;
+    line-height: 1.25rem;
 }
 
-.text-ul{
-  list-style-type:disc;
+
+
+.text-ul {
+  list-style: none;
+  margin:0.2em;
+  font-size:1.15em;
+  font-weight: 500;
+}
+
+/*changing color of bullets and nubers https://www.w3schools.com/howto/howto_css_bullet_color.asp*/
+
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #A15442; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em; 
+}
+
+.text-ol {
+  list-style: none;
   margin:0.2em;
   font-size:1.15em;
 }
 
-.text-ol{
-  list-style-type:decimal;
-  margin:0.2em;
-  font-size:1.15em;
+ol li::before {
+    content: counter(li); 
+    color: #A15442;;
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1.5em;
+    margin-right: 0.5em; 
+    text-align: right; 
+    direction: rtl
 }
-
 .section-main{
 	border-top:none;
 }
 
+li {
+    counter-increment: li
+}
 footer p{
 	margin:0;
 }
@@ -174,7 +396,8 @@ footer p{
 }
 
 .nav-main{ /*https://medium.com/swlh/understanding-css-display-none-block-inline-and-inline-block-63f6510df93 */
-  background-color:#414454;
+    background: #D6C3A9A6;
+    width:100%;
   display:flex;
   flex-direction:row;
   justify-content: flex-end;
@@ -187,48 +410,64 @@ footer p{
   color: #FFFFFF;
   font-weight:bold;
   text-decoration:none;
-  font-size:1.5em;
   padding: 0em 1em 0em 1em;
-	
-
-
-  transition:background-color 0.15s ease-out;
+      font-weight:400;
+      text-decoration:none;
+      text-transform:uppercase;
+      font-size: 1.125em;
+      line-height: 1.2222222em;
+      -webkit-transition: background-color 0.15s ease-out;
+      transition: background-color 0.15s ease-out;
+    
 }
 .nav-main-item:hover, .nav-main-item:focus{
-  background-color: #7B80A0;
+    background-color: #A15442;
 }
 
+.colors{
+    display:inline-block;
+}
+/*color palette*/
 .div-maincolour{
-  display:block;
-  background-color:#E4E8f2;
-  width:7em;
-  height:5em;
-  text-align:right;
-  color:#FFFFFF;
+      display:block;
+      background-color: #E0D4B8;
+      width:7em;
+      height:5em;
+      text-align:center;
+      color:#FFFFFF;
 }
 .div-secondarycolour{
   display:block;
-  background-color:#7B80A0;
+  background-color:#2F1D0C;
   width:7em;
   height:5em;
-  text-align:right;
+  text-align:center;
   color:#FFFFFF;
 }
 .div-thirdcolour{
   display:block;
-  background-color:#414454;
+  background-color: #A15442;
   width:7em;
   height:5em;
-  text-align:right;
+  text-align:center;
   color:#FFFFFF;
 }
 
 .div-fourthcolour{
   display:block;
-  background-color:#FFB85A;
+  background-color: #E0865C;
   width:7em;
   height:5em;
-  text-align:right;
+  text-align:center;
+  color:#FFFFFF;
+}
+
+.div-fifththcolour{
+  display:block;
+  background-color: #91A491;
+  width:7em;
+  height:5em;
+  text-align:center;
   color:#FFFFFF;
 }
 
@@ -252,17 +491,12 @@ footer p{
 	flex-direction:column;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.div-sixthcolour{
+  display:block;
+  background-color: #424942;
+  width:7em;
+  height:5em;
+  text-align:center;
+  color:#FFFFFF;
+}
 
