@@ -77,24 +77,79 @@
     </section>
 
     <section>
-      <h2>Text Input Field & Label</h2> <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input -->
+      <h2>Text Input Field and Label</h2> <!-- https://codepen.io/andreasstorm/pen/gKGbxo -->
 
       <h3>CSS selector:</h3>
       <p>.text-label</p>
-      <p>.input-text</p>
+      <p>.field-input</p>
 
       <h3>Sample code:</h3>
       <code>&lt;label for="sample" class="input-text"&gt;Text Label&lt;/label&gt;</code>
       <code>&lt;input class="input-text"type ="text" id="sample" name="sample"&gt;</code>
 
       <h3>Rendered element:</h3>
-      <label for="sample" class="text-label"> Text Label</label>
-      <input class="input-text"type ="text" id="sample" name="sample">
-    </section>
-
+             
+         <label for="inp" class="inp">
+              <input type="text" id="input-firstName" placeholder="&nbsp;">
+              <span class="label">First Name</span>
+              <span class="border"></span>
+        </label>
+        <label for="inp" class="inp">
+              <input type="text" id="input-lastName" placeholder="&nbsp;">
+              <span class="label">Last Name</span>
+              <span class="border"></span>
+        </label>
+        <label for="inp" class="inp">
+              <input type="text" id="input-email" placeholder="&nbsp;">
+              <span class="label">E-mail</span>
+              <span class="border"></span>
+        </label>
+       
+<!--selsect drop https://codepen.io/miniven/pen/ZJydge -->   
+            <div class="select-box">
+              <div class="select-box__current" tabindex="1">
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">Duration</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">30 minutes</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">45 minutes</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">1 hour</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">1.30 hour</p>
+                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+              </div>
+              <ul class="select-box__list">
+                    <li>
+                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Duration</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">30 minutes</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">45 minutes</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">1 hour</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">1.30 hours</label>
+                    </li>
+              </ul>
+            </div>   <!-- end of select drop group-->
+      </section>
   </section>
   <!-- // INTERACTIVE ELEMENTS SECTION END -->
-
 
 
   <!-- TEXT ELEMENTS SECTION // -->
@@ -325,6 +380,8 @@
         &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#7B80A0&lt;/p&gt;&lt;/div&gt;
         &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A7A9BA&lt;/p&gt;&lt;/div&gt; 
 		&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#FFB85A&lt;/p&gt;&lt;/div&gt;</pre></code>
+          
+        <div class="colors">
 		<figure>
         <div class="div-maincolour"><p>#e4e8f2</p></div>
 		<figcaption>Primary Colour</figcaption>
@@ -344,6 +401,18 @@
 		<div class="div-fourthcolour"><p>#FFB85A</p></div>
 		<figcaption>Accent Colour</figcaption>
 		</figure>
+          
+          <figure>
+		<div class="div-fifththcolour"><p>#FFB85A</p></div>
+		<figcaption>Accent Colour</figcaption>
+		</figure>
+            
+            <figure>
+		<div class="div-sixthcolour"><p>#FFB85A</p></div>
+		<figcaption>Accent Colour</figcaption>
+		</figure>
+            
+          </div>
       </section> <!--color swatches section end-->
 
     </section>
