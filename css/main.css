@@ -488,6 +488,7 @@ footer p{
   height:5em;
   text-align:center;
   color:#FFFFFF;
+}
 .placeholderimg
 {   
 	background-color: darkgray;
@@ -503,6 +504,7 @@ footer p{
 .staff-info .placeholderimg{
 padding-bottom: 3em;
   }
+    
 .form-container{
 	display:flex;
 	flex-direction: column;
@@ -549,7 +551,6 @@ padding-bottom: 3em;
 }
 
 /* placeholder stuff */
-}
 .div-sixthcolour{
   display:block;
   background-color: #424942;
