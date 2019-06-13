@@ -446,14 +446,19 @@ li {
   height:5em;
   text-align:center;
   color:#FFFFFF;
+.placeholderimg
+{   
+	background-color: darkgray;
+	padding:10em 5em 10em 5em;
 }
 
-.div-sixthcolour{
-  display:block;
-  background-color: #424942;
-  width:7em;
-  height:5em;
-  text-align:center;
-  color:#FFFFFF;
+.text-overlay{
+    margin-right: 8%;
+    padding-right: 8%;
+    background: rgba(235, 227, 190, 0.28);
+}
+
+.staff-info .placeholderimg{
+padding-bottom: 3em;
 }
 
