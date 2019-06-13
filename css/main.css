@@ -336,21 +336,21 @@ img {
   TEXT ELEMENTS -------------------
 */
 
-.text-h1{
+h1{
     font-family: conglomerate,serif;
     font-weight: 600;
-	font-size:3rem;
+	font-size:2.4rem;
     line-height: 1.05rem;
 }
 
-.text-h2{
+h2{
     font-family: conglomerate,serif;
     font-weight: 600;
     font-size:2.25rem;
     line-height: 1.25rem;
 }
 
-.text-h3{
+h3{
     font-family: conglomerate,serif;
     font-weight: 500;
     font-size:1.75rem;
@@ -360,7 +360,7 @@ img {
 
 
 .text-ul {
-  list-style: none;
+  list-style: circle;
   margin:0.2em;
   font-size:1.15em;
   font-weight: 500;
@@ -368,14 +368,16 @@ img {
 
 /*changing color of bullets and nubers https://www.w3schools.com/howto/howto_css_bullet_color.asp*/
 
+/*
 ul li::before {
-  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  content: "\2022";   Add content: \2022 is the CSS Code/unicode for a bullet 
   color: #A15442; 
   font-weight: bold; 
   display: inline-block; 
   width: 1em; 
   margin-left: -1em; 
 }
+*/
 
 .text-ol {
   list-style: none;

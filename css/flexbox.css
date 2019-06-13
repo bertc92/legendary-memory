@@ -33,11 +33,13 @@
 
 .text-overlay {
     color: white;
+/*
     position: absolute; 
      top: 20%; 
      right: 30%; 
     transform: translate(50%, 40%);
-    /* position: relative; */
+*/
+     position: relative; 
     /* align-self: flex-end; */
     text-align: right;
 
@@ -183,9 +185,14 @@
 
 
 /* breakpoint stuff */
-
-
 @media(min-width:600px)
 {
 
+}
+
+@media(max-width:300px)
+{
+.box-grid-item2col{
+    flex-direction:column;
+    }
 }
