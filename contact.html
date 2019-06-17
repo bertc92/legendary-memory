@@ -15,41 +15,114 @@
 
 </head>
 
-<body>
+<body background="img/massage/ornament.png">
 
 <div class="box">
 
-
 <header class="box-grid-header">
-  <nav class="nav-main">
-    <a class="nav-main-item" href="index.html">Home</a>
-    <a class="nav-main-item" href="index.html#services">Services</a>
-    <a class="nav-main-item" href="about.html">Why Us?</a>
-    <a class="nav-main-item" href="contact.html">Contact Us</a>
-  </nav>
+  <nav id= "nav" role="navigation">
+        <a href="#nav" title="Show navigation">Show navigation</a>
+        <a href="#" title="Hide navigation">Hide navigation</a>
+        <ul>
+            <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
+                <ul>
+                  <li><a href="index.html#about">What is Indonisian Massage?</a></li>
+                  <li><a href="index.html#whyus">Why us?</a></li>
+                  <li><a href="index.html#services">Our services</a></li>
+              </ul>
+
+            </li>
+            <!-- styleguide section nav to diff elements of the page -->
+            <li><a href="index.html#services" aria-haspopup="true"><span>Services</span></a>
+                  <ul>
+                    <li><a href="detailedproduct.html">Full body</a></li>
+                    <li><a href="detailedproduct.html">Facial</a></li>
+                    <li><a href="detailedproduct.html">Hot stone</a></li>
+                    <li><a href="detailedproduct.html">Deep Oil</a></li>
+                  </ul>
+            </li>
+            <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
+              <ul>
+                <li><a href="about.html#staff-info">Our Staff</a></li>
+                <li><a href="about.html#awards">Our Awards</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html"><span>Contact us</span></a>
+              <ul>
+                <li><a href="contact.html#about"> Leave a review</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
 </header>
 
+<img class="box-item-image" src="img/massage/contact_banner.png">
 <div class="box-div-wrapper">
-  <h1 id="about">Contact</h1>
+  <h1 id="about">Leave a review </h1>
+    <p class="box-grid-item2col">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
   <section class="box-item-section">
   <div class="box-grid-body2col">
-
     <div class="form-container box-grid-item2col">
+         <label for="inp" class="inp">
+              <input type="text" id="input-firstName" placeholder="&nbsp;">
+              <span class="label">First Name</span>
+              <span class="border"></span>
+        </label>
+        <label for="inp" class="inp">
+              <input type="text" id="input-lastName" placeholder="&nbsp;">
+              <span class="label">Last Name</span>
+              <span class="border"></span>
+        </label>
+        <label for="inp" class="inp">
+              <input type="text" id="input-email" placeholder="&nbsp;">
+              <span class="label">E-mail</span>
+              <span class="border"></span>
+        </label>
+      </div>
 
-  <div class="form-item">
-  <label for="sample" class="text-label">First Name</label>
-  <input class="input-text"type ="text" id="sample" name="sample">
-  </div>
-  <div class="form-item">
-  <label for="sample" class="text-label">Email</label>
-  <input class="input-text"type ="text" id="sample" name="sample">
-  </div>
-    <div class="form-item">
-  <label for="sample" class="text-label">Comments</label>
-  <input class="input-text"type ="text" id="sample" name="sample">
-  </div>
+<!--selsect drop -->
+            <div class="select-box">
+              <div class="select-box__current" tabindex="1">
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">Duration</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">30 minutes</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">45 minutes</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">1 hour</p>
+                    </div>
+                    <div class="select-box__value">
+                          <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
+                          <p class="select-box__input-text">1.30 hour</p>
+                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+              </div>
+              <ul class="select-box__list">
+                    <li>
+                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Duration</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">30 minutes</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">45 minutes</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">1 hour</label>
+                    </li>
+                    <li>
+                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">1.30 hours</label>
+                    </li>
+              </ul>
+            </div>
 
-  </div>
 
   <div class="box-grid-item2col">
 
@@ -59,7 +132,7 @@
   </div>
   </div>
   <a class="button-body" href="#">Submit</a>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam molestie pharetra facilisis.</p>
+    </section>
     </div>
 
   <section class="box-grid-footer">

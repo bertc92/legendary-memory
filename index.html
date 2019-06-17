@@ -15,21 +15,49 @@
 
 </head>
 
-<body>
+<body background="img/massage/ornament.png">
 
-<div class="box">
+<div class="box" >
 
 
 <header class="box-grid-header">
-  <nav class="nav-main">
-  <a class="nav-main-item" href="index.html">Home</a>
-  <a class="nav-main-item" href="index.html#services">Services</a>
-  <a class="nav-main-item" href="about.html">Why Us?</a>
-  <a class="nav-main-item" href="contact.html">Contact Us</a>
-  </nav>
+  <nav id= "nav" role="navigation">
+        <a href="#nav" title="Show navigation">Show navigation</a>
+        <a href="#" title="Hide navigation">Hide navigation</a>
+        <ul>
+            <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
+                <ul>
+                  <li><a href="index.html#about">What is Indonisian Massage?</a></li>
+                  <li><a href="index.html#whyus">Why us?</a></li>
+                  <li><a href="index.html#services">Our services</a></li>
+              </ul>
+
+            </li>
+            <!-- styleguide section nav to diff elements of the page -->
+            <li><a href="index.html#services" aria-haspopup="true"><span>Services</span></a>
+                  <ul>
+                    <li><a href="detailedproduct.html">Full body</a></li>
+                    <li><a href="detailedproduct.html">Facial</a></li>
+                    <li><a href="detailedproduct.html">Hot stone</a></li>
+                    <li><a href="detailedproduct.html">Deep Oil</a></li>
+                  </ul>
+            </li>
+            <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
+              <ul>
+                <li><a href="about.html#staff-info">Our Staff</a></li>
+                <li><a href="about.html#awards">Our Awards</a></li>
+              </ul>
+            </li>
+            <li><a href="contact.html"><span>Contact us</span></a>
+              <ul>
+                <li><a href="contact.html#about"> Leave a review</a></li>
+              </ul>
+            </li>
+        </ul>
+    </nav>
 </header>
-<img  class="box-item-image" src="img/banner.jpg">
-<div class="box-div-wrapper">
+<img  class="box-item-image" src="img/massage/home_banner.png">
+<div  class="box-div-wrapper">
   <section class="box-item-section-beginner">
   <!-- <figure > -->
 
@@ -126,12 +154,12 @@
 	  </div>
 
   <!-- <a class="button-nav" href="contact.html">Book now!</a> -->
-
   </section>
 
-
-
-
+  <section id="review">
+      <h1>Have you tried our services before? PLease leave a review!</h1>
+      <button class="button-body"> Leave a Review </button>
+  </section>
 
     </div>
 
