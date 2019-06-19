@@ -54,11 +54,10 @@
 
   <section class="section-body-wrapper">
     <div class="flexbox-rowrap">
-    <h1 class="flexbox-1col">Book an Appointment</h1>
-
-
+    <h1 class="flexbox-1col">Payment</h1>
     <div class="flexbox-2row-item">
-      <h2 class="flexbox-1col">Contact Information</h2>
+      <h2 class="flexbox-1col">Billing</h2>
+
       <form>
         <label for="inp" class="inp">
              <input type="text" id="input-firstName" placeholder="&nbsp;">
@@ -75,79 +74,102 @@
            <span class="label">Email</span>
            <span class="border"></span>
      </label>
+     <label for="inp" class="inp">
+          <input type="text" id="input-email" placeholder="&nbsp;">
+          <span class="label">Country</span>
+          <span class="border"></span>
+    </label>
+    <label for="inp" class="inp">
+         <input type="text" id="input-email" placeholder="&nbsp;">
+         <span class="label">Address</span>
+         <span class="border"></span>
+   </label>
+   <label for="inp" class="inp">
+        <input type="text" id="input-email" placeholder="&nbsp;">
+        <span class="label">City</span>
+        <span class="border"></span>
+  </label>
+  <label for="inp" class="inp">
+       <input type="text" id="input-email" placeholder="&nbsp;">
+       <span class="label">State/Province</span>
+       <span class="border"></span>
+ </label>
+ <label for="inp" class="inp">
+      <input type="text" id="input-email" placeholder="&nbsp;">
+      <span class="label">Postal Code</span>
+      <span class="border"></span>
+</label>
 </form>
-
 </div>
 
-
 <div class="flexbox-2row-item">
-      <h2 class="flexbox-1col">Appointment Information</h2>
-      <div class="form-item flexbox-2row-item">
-      <label for="date" class="inp" placeholder="&nbsp;">
-        <span class="label">Date</span>
-        <span class="border"></span>
-      <input class="inp-date" type ="date" id="date" name="date">
+
+
+      <h2 class="flexbox-1col">Payment Method</h2>
+
+      <div class="flexbox-1col">
+      <div class="form-item">
+        <label for="inp" class="inp">
+             <input type="text" id="input-email" placeholder="&nbsp;">
+             <span class="label">Credit Card Number</span>
+             <span class="border"></span>
+       </label>
+       <label for="inp" class="inp">
+            <input type="text" id="input-email" placeholder="&nbsp;">
+            <span class="label">CVV</span>
+            <span class="border"></span>
+      </label>
       </div>
-	  
-	   <!-- <div class="select-box"> -->
-	   <!-- <select class="select-box__current"> -->
-	   <!-- <option value="0">Duration:</option> -->
-	   <!-- <option value="1">30 minutes</option> -->
-	   <!-- <option value="2">45 minutes</option> -->
-	   <!-- <option value="3">1 hour</option> -->
-	   <!-- <option value="4">1.5 hours</option> -->
-	   <!-- </select> -->
-	   <!-- </div> -->
+
+
 
       <div class="select-box">
-        <div class="select-box__current" tabindex="1">
+        <div class="select-box__current" tabindex="0">
               <div class="select-box__value">
                     <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked/>
-                    <p class="select-box__input-text">Duration</p>
+                    <p class="select-box__input-text">Payment Method</p>
               </div>
               <div class="select-box__value">
                     <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
-                    <p class="select-box__input-text">30 minutes</p>
+                    <p class="select-box__input-text">Visa</p>
               </div>
               <div class="select-box__value">
                     <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
-                    <p class="select-box__input-text">45 minutes</p>
+                    <p class="select-box__input-text">Debit</p>
               </div>
               <div class="select-box__value">
                     <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
-                    <p class="select-box__input-text">1 hour</p>
+                    <p class="select-box__input-text">Cash</p>
               </div>
               <div class="select-box__value">
                     <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
-                    <p class="select-box__input-text">1.30 hour</p>
+                    <p class="select-box__input-text">Cheque</p>
               </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
         </div>
         <ul class="select-box__list">
-              <!-- <li> -->
-                  <!-- <label class="select-box__option" for="0" aria-hidden="aria-hidden">Duration</label> -->
-              <!-- </li> -->
+              <!-- <li>
+                  <label class="select-box__option" for="0" aria-hidden="aria-hidden">Payment Method</label>
+              </li> -->
               <li>
-                  <label class="select-box__option" for="1" aria-hidden="aria-hidden">30 minutes</label>
+                  <label class="select-box__option" for="1" aria-hidden="aria-hidden">Visa</label>
               </li>
               <li>
-                  <label class="select-box__option" for="2" aria-hidden="aria-hidden">45 minutes</label>
+                  <label class="select-box__option" for="2" aria-hidden="aria-hidden">Debit</label>
               </li>
               <li>
-                  <label class="select-box__option" for="3" aria-hidden="aria-hidden">1 hour</label>
+                  <label class="select-box__option" for="3" aria-hidden="aria-hidden">Cash</label>
               </li>
               <li>
-                  <label class="select-box__option" for="4" aria-hidden="aria-hidden">1.30 hours</label>
+                  <label class="select-box__option" for="4" aria-hidden="aria-hidden">Cheque</label>
               </li>
         </ul>
       </div>
-
-  </div>
+      </div>
+</div>
 
       <div class="flexbox-1col">
-      <a href="payment.html"><input class="button-body button-book" type="submit" value="Submit"></a>
-    </div>
-
-
+      <a href="confirmed.html"><input class="button-body button-book" type="submit" value="Submit"></a>
+      </div>
 
   </section>
 
