@@ -126,6 +126,28 @@ p{
   margin:0.5em;
 }
 
+.h1{
+    font-family: conglomerate,serif;
+    font-weight: 500;
+	font-size:3rem;
+    line-height: 1.05rem;
+}
+
+.h2{
+    font-family: conglomerate,serif;
+    font-weight: 500;
+    font-size:2.25rem;
+    line-height: 1.25rem;
+}
+
+.h3{
+    font-family: conglomerate,serif;
+    font-weight: 500;
+    font-size:1.75rem;
+    line-height: 1.25rem;
+}
+
+
 textarea{
   border:none;
   border-bottom:2px solid #E0D4B8;
