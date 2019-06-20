@@ -616,7 +616,9 @@ img{
 .receiptborder{
   border:2px dotted black;
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
+  flex:1 1 100%;
+  margin:2.5em;
 }
 
 .receiptborder h2{
@@ -624,6 +626,10 @@ img{
   margin-left:1px;
   max-width:4em;
   background:white;
+}
+
+.receiptborder h3{
+  margin:0.5em 0.5em 0.5em 0.25em;
 }
 
 
