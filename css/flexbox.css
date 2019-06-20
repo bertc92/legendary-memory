@@ -10,6 +10,7 @@
 }
 
 .section-body-wrapper{
+  margin-top: 2em;
   margin-left:10%;
   margin-right:10%;
 }
@@ -36,11 +37,13 @@
   flex-wrap:wrap;
 }
 
-.left{
+/*
+.flexbox-2row-item .left{
     padding-top: 1em;
 	max-width: 80%;
 	max-height:80%;
 }
+*/
 
 
 .figure-benefits img{
@@ -63,6 +66,7 @@
 
 .flexbox-1col
 {
+    margin-top: 2em;
   flex:1 1 100%;
 }
 
@@ -76,17 +80,11 @@
   /*margin:0.3em;*/
 }
 
+.flexbox-3row-item h3{
+    text-align: center;
+}
+
 @media (max-width: 375px){
-/*
-    .flexbox-norowrap 
-        {
-          flex-direction:column;
-          flex: 1 1 200px;
-        }
-    .flexbox-rowwrap {
-          flex-direction:column;
-    }
-*/
     .figure-benefits{
          flex-direction:column;
     }
