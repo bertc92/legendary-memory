@@ -1,10 +1,8 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Pennypacker Massage Solutions</title>
+  <title></title>
   <meta name="description" content="Pennypacker Massage Solutions">
   <meta name="author" content="Bert Cheung & Polina Chzhan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,135 +10,171 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="css/font.css">
-
 </head>
 
+
 <body background="img/massage/ornament.png">
-
-<div class="box">
-
-<header class="box-grid-header">
-  <nav id= "nav" role="navigation">
-        <a href="#nav" title="Show navigation">Show navigation</a>
-        <a href="#" title="Hide navigation">Hide navigation</a>
-        <ul>
-            <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
-                <ul>
-                  <li><a href="index.html#about">What is Indonisian Massage?</a></li>
-                  <li><a href="index.html#whyus">Why us?</a></li>
-                  <li><a href="index.html#services">Our services</a></li>
-              </ul>
-
-            </li>
-            <!-- styleguide section nav to diff elements of the page -->
-            <li><a href="index.html#services" aria-haspopup="true"><span>Services</span></a>
-                  <ul>
-                    <li><a href="detailedproduct.html">Full body</a></li>
-                    <li><a href="detailedproduct.html">Facial</a></li>
-                    <li><a href="detailedproduct.html">Hot stone</a></li>
-                    <li><a href="detailedproduct.html">Deep Oil</a></li>
+  <header>
+    <nav class="flexbox-nav" id= "nav" role="navigation">
+            <a href="#nav" title="Show navigation">Show navigation</a>
+            <a href="#" title="Hide navigation">Hide navigation</a>
+            <ul>
+                <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
+                    <ul>
+                      <li><a href="index.html#about">What is Indonisian Massage?</a></li>
+                      <li><a href="index.html#whyus">Why us?</a></li>
+                      <li><a href="index.html#services">Our services</a></li>
                   </ul>
-            </li>
-            <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
-              <ul>
-                <li><a href="about.html#staff-info">Our Staff</a></li>
-                <li><a href="about.html#awards">Our Awards</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html"><span>Contact us</span></a>
-              <ul>
-                <li><a href="contact.html#about"> Leave a review</a></li>
-              </ul>
-            </li>
-        </ul>
-    </nav>
-</header>
 
-<img class="box-item-image" src="img/massage/contact_banner.png">
-<div class="box-div-wrapper">
-  <h1 id="about">Leave a review </h1>
-    <p class="box-grid-item2col">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-  <section class="box-item-section">
-  <div class="box-grid-body2col">
-    <div class="form-container box-grid-item2col">
+                </li>
+                <!-- styleguide section nav to diff elements of the page -->
+                <li><a href="index.html#services" aria-haspopup="true"><span>Services</span></a>
+                      <ul>
+                        <li><a href="detailedproduct.html">Full body</a></li>
+                        <li><a href="detailedproduct.html">Facial</a></li>
+                        <li><a href="detailedproduct.html">Hot stone</a></li>
+                        <li><a href="detailedproduct.html">Deep Oil</a></li>
+                      </ul>
+                </li>
+                <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
+                  <ul>
+                    <li><a href="about.html#staff-info">Our Staff</a></li>
+                    <li><a href="about.html#awards">Our Awards</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html"><span>Contact us</span></a>
+                  <ul>
+                    <li><a href="contact.html#about"> Leave a review</a></li>
+                  </ul>
+                </li>
+            </ul>
+    </nav>
+  </header>
+  <img class="img-banner"  src="img/massage/contact_banner.png">
+  <section class="section-body-wrapper">
+
+    <div class="flexbox-rowrap">
+      <h1 class="flexbox-1col" id="about">Leave a review </h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+
+
+        <form class="flexbox-2row-item">
+          <label for="inp" class="inp">
+               <input type="text" id="input-firstName" placeholder="&nbsp;">
+               <span class="label">First Name</span>
+               <span class="border"></span>
+         </label>
          <label for="inp" class="inp">
-              <input type="text" id="input-firstName" placeholder="&nbsp;">
-              <span class="label">First Name</span>
-              <span class="border"></span>
-        </label>
-        <label for="inp" class="inp">
               <input type="text" id="input-lastName" placeholder="&nbsp;">
               <span class="label">Last Name</span>
               <span class="border"></span>
         </label>
         <label for="inp" class="inp">
-              <input type="text" id="input-email" placeholder="&nbsp;">
-              <span class="label">E-mail</span>
-              <span class="border"></span>
-        </label>
+             <input type="text" id="input-email" placeholder="&nbsp;">
+             <span class="label">Email</span>
+             <span class="border"></span>
+       </label>
+
+
+	   <!-- <div>
+	   <select class="select-box__current">
+	   <option value="0">Duration:</option>
+	   <option value="1">30 minutes</option>
+	   <option value="2">45 minutes</option>
+	   <option value="3">1 hour</option>
+	   <option value="4">1.5 hours</option>
+	   </select>
+	   </div> -->
+
+
+          <div class="select-box">
+            <div class="select-box__current" tabindex="1">
+                  <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="0" value="0" name="Ben" checked="checked"/>
+                        <p class="select-box__input-text">Rating</p>
+                  </div>
+                  <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="1" value="1" name="Ben"/>
+                        <p class="select-box__input-text">1</p>
+                  </div>
+                  <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="2" value="2" name="Ben"/>
+                        <p class="select-box__input-text">2</p>
+                  </div>
+                  <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="3" value="3" name="Ben"/>
+                        <p class="select-box__input-text">3</p>
+                  </div>
+                  <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="4" value="4" name="Ben"/>
+                        <p class="select-box__input-text">4</p>
+                  </div>
+                  <div class="select-box__value">
+                        <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
+                        <p class="select-box__input-text">5</p>
+                  </div>
+                  <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+            </div>
+            <ul class="select-box__list">
+                  <li>
+                      <label class="select-box__option" for="1" aria-hidden="aria-hidden">1</label>
+                  </li>
+                  <li>
+                      <label class="select-box__option" for="2" aria-hidden="aria-hidden">2</label>
+                  </li>
+                  <li>
+                      <label class="select-box__option" for="3" aria-hidden="aria-hidden">3</label>
+                  </li>
+                  <li>
+                      <label class="select-box__option" for="4" aria-hidden="aria-hidden">4</label>
+                  </li>
+
+                  <li>
+                      <label class="select-box__option" for="5" aria-hidden="aria-hidden">5</label>
+                  </li>
+            </ul>
+          </div>
+
+
+
+      <div class="flexbox-1col">
+        <textarea rows="8" cols="50" placeholder="Enter your comments here"></textarea>
+
       </div>
 
-<!--selsect drop -->
-            <div class="select-box">
-              <div class="select-box__current" tabindex="1">
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">Duration</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">30 minutes</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">45 minutes</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">1 hour</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">1.30 hour</p>
-                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-              </div>
-              <ul class="select-box__list">
-                    <li>
-                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Duration</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">30 minutes</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">45 minutes</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">1 hour</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">1.30 hours</label>
-                    </li>
-              </ul>
-            </div>
+
+  </form>
 
 
-  <div class="box-grid-item2col">
-
-  <p>Map goes here</p>
-  <p>massages@sample.com</p>
-  <p>604-123-4567</p>
-  </div>
-  </div>
-  <a class="button-body" href="#">Submit</a>
-    </section>
+      <div class="flexbox-3row-item">
+      <p>Map goes here</p>
+      <p>massages@sample.com</p>
+      <p>604-123-4567</p>
+    </div>
+    <div class="flexbox-1col">
+        <a class="button-body" href="#">Submit</a>
+      </div>
     </div>
 
-  <section class="box-grid-footer">
-  <footer>
-  <p>IAT334 D101 Bert Cheung & Polina Chzhan</p>
-  </footer>
-  </section>
+    <footer class="flexbox-1col">
+      <div class="flexbox-norowrap">
+        <div class="flexbox-2row-item">
+        <ul>
+          <li>Bert Cheung</li>
+          <li>Polina Chzhan</li>
+        </ul>
+      </div>
+      <div class="flexbox-2row-item">
+<p>IAT334 D101 Bert Cheung & Polina Chzhan</p>
+      </div>
+      </div>
+    </footer>
 
-</div>
+    </section>
+
+
+
+
+
 </body>
 </html>
