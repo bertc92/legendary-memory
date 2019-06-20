@@ -135,6 +135,18 @@ a {
   text-decoration: none;
 }
 
+p{
+  margin:0.5em;
+}
+
+textarea{
+  border:none;
+  border-bottom:2px solid #E0D4B8;
+  font-size:1em;
+  color:#E0865C;
+  font-weight:500;
+}
+
 /* navbar stuff */
 #nav {
     background: #D6C3A9A6;
@@ -599,6 +611,19 @@ img{
     -webkit-transform: scaleY(0);
             transform: scaleY(0);
   }
+}
+
+.receiptborder{
+  border:2px dotted black;
+  display:flex;
+  flex-direction:row;
+}
+
+.receiptborder h2{
+  margin-top:-10px;
+  margin-left:1px;
+  max-width:4em;
+  background:white;
 }
 
 

@@ -45,10 +45,10 @@
 
 .flexbox-2row-item{
   flex:1 1 40%;
-  margin:0.5em;
+  /*margin:0.5em;*/
 }
 
 .flexbox-3row-item{
   flex:1 1 30%;
-  margin:0.3em;
+  /*margin:0.3em;*/
 }
