@@ -806,13 +806,41 @@ span{
     .footer-distributed .footer-center p {
       display: inline-block;
     }
-
-    .awards img {
+    
+/*
+    img {
     display: inline-block;
-	width: 10px;
-	height: 10px;
+	min-width: 100px;
+	min-height: 100px;
 	cursor: pointer;
 	margin-right: 3px;
 	margin-bottom: 5px;
     }
+*/
+}
+
+/*mobile*/
+@media (min-width: 320px){
+    
+    body{
+        font-size:1em ;
+        line-height: 1.25em;
+    }
+    
+    h1{
+	font-size:1.625em ;
+    line-height: 1.15384615em;
+    }
+    
+    h2{
+        font-size: 1.375em;
+        line-height: 1.13636364em;
+    }
+
+    h3{
+        font-size:1.125rem;
+        line-height: 1.11111111em;
+    }
+
+}
 /* navbar menu */

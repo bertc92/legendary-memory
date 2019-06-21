@@ -66,16 +66,19 @@
 
 .flexbox-1col
 {
-    margin-top: 2em;
   flex:1 1 100%;
 }
 
 .flexbox-2row-item{
+    padding: 1em;
   flex:1 1 40%;
   /*margin:0.5em;*/
 }
 
 .flexbox-3row-item{
+    padding-top: 0.3em;
+  padding-right: 1em;
+  padding-left: 1em;
   flex:1 1 30%;
   /*margin:0.3em;*/
 }
@@ -84,8 +87,30 @@
     text-align: center;
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px){  
     .figure-benefits{
          flex-direction:column;
     }
+    
+    .flexbox-2row-item{
+    padding: 1em;
+  flex:1 1 100%;
+  /*margin:0.5em;*/
+}
+
+.flexbox-3row-item{
+  padding-top: 1em;
+  flex:1 1 100%;
+  /*margin:0.3em;*/
+}
+
+    
+    .flexbox-rowrap{
+     flex-direction:column;   
+    }
+    .flexbox-norowrap{
+     flex-wrap:wrap;
+    
+    }
+
 }
