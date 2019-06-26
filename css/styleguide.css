@@ -1,0 +1,36 @@
+pre code {
+	margin:1em;
+		background-color: #eee;
+		display:block-inline;
+		padding:1em;
+		line-height:1.5em;
+}
+.div-maincolour{
+		display:inline-block;
+		background-color:#E0D4B8;
+}
+
+.div-secondarycolour{
+		display:inline-block;
+		background-color:#2F1D0C;
+}
+
+.div-thirdcolour{
+		display:inline-block;
+		background-color:#A15442;
+}
+
+.div-fourthcolour{
+		display:inline-block;
+		background-color:#E0865C;
+}
+
+.div-fifthcolour{
+		display:inline-block;
+		background-color:#91A491;
+}
+
+.div-sixthcolour{
+		display:inline-block;
+		background-color:#424942;
+}

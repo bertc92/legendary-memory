@@ -4,18 +4,18 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Indonesian Massage Revised Styleguide</title>
+  <title>Indosage Styleguide</title>
   <link rel="stylesheet" href="https://use.typekit.net/ujm7lkp.css">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/font.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
+  <link href="css/styleguide.css" rel="stylesheet">
 
 </head>
 
 <body background="img/massage/ornament.png">
-  <h2>Revised for P02</h2>
-  <h1>A Style Guide for Indonesian Massage</h1>
-  <nav id= "nav" role="navigation">
+  <header>
+  <nav class="flexbox-nav" id= "nav" role="navigation">
         <a href="#nav" title="Show navigation">Show navigation</a>
         <a href="#" title="Hide navigation">Hide navigation</a>
         <ul>
@@ -35,13 +35,16 @@
                     <li><a href="#combined_elements">Combined Elements</a></li>
                   </ul>
             </li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="citations.html">Citations</a></li>
+            <li><a href="sitemap.html"><span>Sitemap</span></a></li>
+            <li><a href="citations.html"><span>Citations</span></a></li>
         </ul>
     </nav>
+  </header>
 
-  <h1>A Style Guide for Pennypacker Latex Solutions</h1>
-  <h2>Revised for P02</h2>
+<section class="section-body-wrapper">
+
+  <h1>A Style Guide for Indosage</h1>
+
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <section id="interactive_elements">
 
@@ -54,8 +57,27 @@
       <h3>CSS selector:</h3>
       <p>.button-nav</p>
 
+	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+	margin: 2em;
+	display: inline-block;
+	padding: 0.7em 0.5em;
+	color: #FFFFFF;
+	background-color: #D6C3A9A6; /*hex representation for 65% transparent - is A6*/
+	font-size: 1.125em;
+	line-height: 1.22222222em
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: background-color 0.15s ease-out;
+	transition: background-color 0.15s ease-out;
+	  </p></pre>
+
       <h3>Sample code:</h3>
-      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      <pre><code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+	  </pre>
+
+
 
       <h3>Rendered element:</h3>
       <a class="button-nav" href="#">Default Button</a>
@@ -66,7 +88,15 @@
       <h2>In-text link</h2>
 
       <h3>CSS selector:</h3>
-      <p>.text-link</p>
+      <p>.text-link or a</p>
+
+	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+  font-weight:500;
+  color:#E0865C;
+  text-decoration:none;
+  transition: color 0.15s ease-out;
+	  </p></pre>
 
       <h3>Sample code:</h3>
       <code>&lt;a href="#" class="text-link"&gt;In-text Link&lt;/a&gt;</code>
@@ -80,6 +110,24 @@
 
       <h3>CSS selector:</h3>
       <p>.button-body</p>
+
+	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+	display: inline-block;
+	background-image: linear-gradient(#E0865C, #A34C35);
+	border-radius: 0.12em;
+	padding: 0.4em 1.3em 0.6em 1.3em;
+	color: white;
+	font-size: 1em;
+	line-height:normal;
+	text-align: center;
+	font-weight:500;
+	text-transform: capitalize;
+	text-decoration: NONE;
+	max-width:10em;
+	-webkit-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+	  </p></pre>
 
       <h3>Sample code:</h3>
       <code>&lt;a href="#" class="button-form"&gt;Default Button&lt;/a&gt;</code>
@@ -96,9 +144,116 @@
       <p>.text-label</p>
       <p>.field-input</p>
 
+
+	  	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+  Text Labels:
+  /* Styling for text labels/fields https://codepen.io/andreasstorm/pen/gKGbxo*/
+.inp {
+      display: inline-block;
+      box-sizing:border-box;
+      position: relative;
+      margin: 0.5em 0.5em 0.5em 0em;
+      width: 100%;
+      max-width: 280px;
+      flex:1 1 50%;
+
+}
+
+/*initial hint*/
+.inp .label {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      font-size: 1em;
+      color: #E0865C;
+      font-weight: 400;
+      transform-origin: 0 0;
+      transition: all 0.2s ease;
+}
+.inp .border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      /*width: 100%;*/
+      max-width:3em;
+      background: #E0865C;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      transition: all 0.15s ease;
+}
+.inp input {
+      -webkit-appearance: none;
+      /* width: 100%; */
+      border: 0;
+
+      max-width:10em;
+      font-family: inherit;
+      padding: 0px;
+      height: 48px;
+      font-size: 1.5em;
+      font-weight: 500;
+      border-bottom: 2px solid #E0D4B8;
+      background: none;
+      color: #2F1D0C;
+      transition: all 0.15s ease;
+}
+
+.inp-date{
+  margin:1.5em 1.5em 1.5em 0;
+  font-size:1em;
+}
+
+
+
+.inp input:hover {
+    background: rgba(224, 212, 184, 0.15);
+}
+
+.inp input:not(:placeholder-shown) + span {
+      color: #c6af7a;
+      transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+      background: none;
+      outline: none;
+}
+.inp input:focus + span {
+      color: #E0865C;
+      transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus + span + .border {
+    transform: scaleX(1);
+}
+
+
+Selectbox
+
+.select-box__current {
+  border:none;
+  border-bottom: 2px solid #E0D4B8;
+  cursor: pointer;
+  outline: none;
+  color:#E0865C;
+}
+
+	  </p></pre>
+
       <h3>Sample code:</h3>
       <code>&lt;label for="sample" class="input-text"&gt;Text Label&lt;/label&gt;</code>
       <code>&lt;input class="input-text"type ="text" id="sample" name="sample"&gt;</code>
+      <pre>
+          &lt;div class="form-item flexbox-2row-item">
+            &lt;select class="select-box__current"&gt;
+              &lt;option value="0">Duration:&lt;/option&gt;
+              &lt;option value="1">30 minutes&lt;/option&gt;
+              &lt;option value="1">45 minutes&lt;/option&gt;
+              &lt;option value="1">1 hour&lt;/option&gt;
+              &lt;option value="1">1.5 hours&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+      </pre>
 
       <h3>Rendered element:</h3>
 
@@ -118,50 +273,16 @@
               <span class="border"></span>
         </label>
 
-<!--selsect drop https://codepen.io/miniven/pen/ZJydge -->
-            <div class="select-box">
-              <div class="select-box__current" tabindex="1">
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">Duration</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">30 minutes</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">45 minutes</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">1 hour</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">1.30 hour</p>
-                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-              </div>
-              <ul class="select-box__list">
-                    <li>
-                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Duration</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">30 minutes</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">45 minutes</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">1 hour</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">1.30 hours</label>
-                    </li>
-              </ul>
-            </div>   <!-- end of select drop group-->
+      <div>
+        <select class="select-box__current">
+          <option value="0">Duration:</option>
+          <option value="1">30 minutes</option>
+          <option value="1">45 minutes</option>
+          <option value="1">1 hour</option>
+          <option value="1">1.5 hours</option>
+        </select>
+      </div>
       </section>
-  </section>
   <!-- // INTERACTIVE ELEMENTS SECTION END -->
 
 
@@ -173,16 +294,45 @@
       <p>Headings use Conglomerate Demi and Medium at 3 em, 2.25 em, and 1.75 em respectively for header levels.</p>
 
       <h3>CSS selector:</h3>
-      <p>.text-h1</p>
-      <p>.text-h2</p>
-      <p>.text-h3</p>
+      <p>h1</p>
+      <p>h2</p>
+      <p>h3</p>
+
+	  <h3>CSS Stylings:</h3>
+	  <pre>
+	  <p>
+	h1
+	{
+		font-family: conglomerate,serif;
+		font-weight: 500;
+		font-size:3rem;
+		line-height: 1.05rem;
+	}
+	h2
+	{
+		font-family: conglomerate,serif;
+		font-weight: 500;
+		font-size:2.25rem;
+		line-height: 1.25rem;
+	}
+
+	h3
+	{
+		font-family: conglomerate,serif;
+		font-weight: 500;
+		font-size:1.75rem;
+		line-height: 1.25rem;
+	}
+
+	  </p>
+	  </pre>
 
       <h3>Sample code:</h3>
-      <code>&lt;h1 class="text-h1"&gt;Header One&lt;/h1&gt;</code>
+      <code>&lt;h1&gt;Header One&lt;/h1&gt;</code>
 
-      <code>&lt;h2 class="text-h2"&gt;Header Two&lt;/h2&gt;</code>
+      <code>&lt;h2&gt;Header Two&lt;/h2&gt;</code>
 
-      <code>&lt;h3 class="text-h3"&gt;Header Three&lt;/h3&gt;</code>
+      <code>&lt;h3&gt;Header Three&lt;/h3&gt;</code>
 
       <h3>Rendered element:</h3>
       <h1 class="text-h1">Header One</h1>
@@ -193,16 +343,26 @@
 
     <section>
       <h2>Paragraphs</h2>
-      <p>Styled in 1rem size and Merel Light.</p>
+      <p>Styled in Merel Light font and 0.5 em margin.</p>
 
       <h3>CSS selector:</h3>
-      <p>.text-p</p>
+      <p>p</p>
+
+	  <h3>CSS Stylings:</h3>
+	  <pre>
+	  <p>
+	  p
+	  {
+	  margin:0.5em;
+	  }
+	  </p>
+	  </pre>
 
       <h3>Sample code:</h3>
-      <code>&lt;p class="text-p"&gt;Paragraph Text&lt;/a&gt;</code>
+      <code>&lt;p&gt;Paragraph Text&lt;/p&gt;</code>
 
       <h3>Rendered element:</h3>
-      <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa erat, sodales nec diam a, maximus blandit elit. Ut dapibus ipsum nec arcu posuere, et cursus nunc cursus. Quisque id enim rhoncus, volutpat nulla et, tempus nibh. Nullam posuere, velit et pulvinar efficitur, sapien eros placerat urna, vel cursus libero mi eget turpis. Nunc scelerisque consectetur mi. Aliquam vitae leo at orci malesuada sodales. Vivamus eu nulla ac turpis tincidunt fermentum. Aliquam consequat ex massa, vitae ullamcorper elit tincidunt ac. Nulla volutpat eleifend ornare.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa erat, sodales nec diam a, maximus blandit elit. Ut dapibus ipsum nec arcu posuere, et cursus nunc cursus. Quisque id enim rhoncus, volutpat nulla et, tempus nibh. Nullam posuere, velit et pulvinar efficitur, sapien eros placerat urna, vel cursus libero mi eget turpis. Nunc scelerisque consectetur mi. Aliquam vitae leo at orci malesuada sodales. Vivamus eu nulla ac turpis tincidunt fermentum. Aliquam consequat ex massa, vitae ullamcorper elit tincidunt ac. Nulla volutpat eleifend ornare.</p>
       </section>
 
       <section>
@@ -210,6 +370,16 @@
         <p>Styled in default Disc style, 1.25em font size and 0.2em margin.</p>
         <h3>CSS selector:</h3>
         <p>.text-ul</p>
+
+        <h3>CSS Stylings:</h3>
+    	  <pre>
+    	  <p>
+    	  .text-ul
+    	  {
+
+    	  }
+    	  </p>
+    	  </pre>
 
         <h3>Sample code:</h3>
         <code>&lt;ul class="text-ul"&gt; &lt;li&gt;Text&lt;/li&gt; &lt;/ul&gt;</code>
@@ -231,6 +401,16 @@
 
         <h3>CSS selector:</h3>
         <p>.text-ol</p>
+
+        <h3>CSS Stylings:</h3>
+    	  <pre>
+    	  <p>
+    	  .text-ol
+    	  {
+
+    	  }
+    	  </p>
+    	  </pre>
 
         <h3>Sample code:</h3>
         <code>&lt;ol class="text-ol"&gt; &lt;li&gt;Text&lt;/li&gt; &lt;/ol&gt;</code>
@@ -259,6 +439,16 @@
         <h3>CSS selector:</h3>
         <p>.nav-main  .nav-main-item</p>
 
+        <h3>CSS Stylings:</h3>
+    	  <pre>
+    	  <p>
+    	  p
+    	  {
+
+    	  }
+    	  </p>
+    	  </pre>
+
         <h3>Sample code:</h3>
         <code>
           &lt;nav class="nav-main"&gt;
@@ -275,23 +465,6 @@
          <a href="#" class="nav-main-item">About</a>
          <a href="#" class="nav-main-item">Contact</a>
        </nav>
-      </section>
-
-      <section>
-        <h2>Product Listing</h2>
-        <p>Done using a flexbox wrap structure.</p>
-        <h3>CSS selector:</h3>
-        <p>.box  .box-nav .box-nav-item</p>
-
-        <h3>Sample code:</h3>
-        <code></code>
-        <h3>Rendered element:</h3>
-        <div class="box">
-
-      </div>
-
-
-
       </section>
 
       <section>
@@ -341,7 +514,7 @@
 
         <div class="colors">
 		<figure>
-        <div class="div-maincolour"><p>#E0D4B8</p></div>
+    <div class="div-maincolour"><p>#E0D4B8</p></div>
 		<figcaption>Primary Colour</figcaption>
 		</figure>
 
@@ -361,7 +534,7 @@
 		</figure>
 
           <figure>
-		<div class="div-fifththcolour"><p>#91A491</p></div>
+		<div class="div-fifthcolour"><p>#91A491</p></div>
 		<figcaption>Accent Colour</figcaption>
 		</figure>
 
@@ -376,6 +549,69 @@
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
+</section>
+</section>
 
+
+
+    <footer class="footer-distributed">
+        <div class="footer-left-logo" class="logo">
+            <img src="img/home/logo/light-logo@2x.png" >
+        </div>
+            <div class="footer-left">
+            <p class="footer-links">
+
+              <a href="#">Home</a>
+              <span>&#183;</span>
+              <a href="#">Services</a>
+              <span>&#183;</span>
+              <a href="#">About</a>
+              <span>&#183;</span>
+              <a href="#">Contact Us</a>
+            </p>
+
+            <p class="footer-policy-links">
+                        <a href="#">Payment</a>
+                        |
+                        <a href="styleguide.html">Styleguide</a>
+                        |
+                        <a href="citations.html">Citations</a>
+                    </p>
+          </div>
+
+          <div class="footer-center">
+            <div>
+              <i class="address"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
+                <p>Unit 140 – 815, 1st Street,</p>
+                        <p>New Westminster, BC, V3L 2H7</p></a>
+            </div>
+
+            <div>
+              <i class="phone"></i>
+                        <p><a href="tel:+15555555555">Phone: 236-777-0376</a></p>
+            </div>
+            <div>
+              <i class="email"></i>
+              <p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="footer-company-about">
+              Follow Us
+            </p>
+            <div class="footer-icons">
+              <a href="#">
+                            <img src="img/home/services/SVG/insta.svg">
+                        </a>
+              <a href="#">
+                            <img src="img/home/services/SVG/twitter.svg">
+                        </a>
+              <a href="#">
+                            <img src="img/home/services/SVG/facebook.svg">
+                        </a>
+            </div>
+          </div>
+
+    </footer>
   </body>
   </html>

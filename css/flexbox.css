@@ -10,9 +10,11 @@
 }
 
 .section-body-wrapper{
+  position:relative;
   margin-top: 2em;
   margin-left:10%;
   margin-right:10%;
+  min-height:100vh;
 }
 
 .flexbox-benefits-padding{
@@ -138,6 +140,10 @@
     .flexbox-norowrap{
      flex-wrap:wrap;
 
+    }
+
+    .section-body-wrapper{
+      margin:1em;
     }
 
 }

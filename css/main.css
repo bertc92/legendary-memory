@@ -6,9 +6,9 @@ html{
 }
 
 body{
-  min-height: calc(100% - 285px);
-  height: 100%;
-  min-height: 100%;
+  /* min-height: calc(100% - 285px); */
+  /* height: 100%; */
+  /* min-height: 100%; */
   margin: 0;
   font-family: merel,sans-serif;
   font-weight: 400;
@@ -21,39 +21,9 @@ header{
   top:0px;
   z-index:20;
 }
-/*
-.hero{
 
-	max-width:100%;
-	height:100vh;
-	background-image:url("../img/massage/home_banner.png");
-
-	display:flex;
-	/* justify-content:center; */
-	align-items:flex-end;
-
-
-
-	background-size:cover;
-	background-repeat:no-repeat;
-  background-position:center center;
-	/* background-attachment:fixed; */
-
-	color:white;
-}
-
-.hero-inner{
-	right:100%;
-  padding:1em;
-  background-color:rgba(214, 195, 169,0.2);
-}
-*/
 #about-banner{
   background-image:url("../img/massage/about_banner.png");
-}
-
-.hero-inner h1,h2{
-  /*background-color:white;*/
 }
 
 .button-nav {
@@ -130,21 +100,26 @@ p{
 h1{
     font-family: conglomerate,serif;
     font-weight: 500;
-	font-size:3rem;
-    line-height: 1.05rem;
+	font-size:3em;
+    line-height: 1.05em;
 }
 h2{
     font-family: conglomerate,serif;
     font-weight: 500;
-    font-size:2.25rem;
-    line-height: 1.25rem;
+    font-size:2.25em;
+    line-height: 1.25em;
+    margin: 1.75em 0em 1.75em 0em;
 }
 
 h3{
     font-family: conglomerate,serif;
     font-weight: 500;
-    font-size:1.75rem;
-    line-height: 1.25rem;
+    font-size:1.75em;
+    line-height: 1.25em;
+}
+
+form{
+  margin:2em 0em 2em 0em
 }
 
 
@@ -164,13 +139,6 @@ textarea{
     flex-direction:row;
     justify-content:flex-end;
     z-index:10;
-/*
-  background: #D6C3A9A6;
-  width: 100%;  1000
-  position: absolute;
-  top: 25%;
-  right: 0;
-  margin-left: -30em;  30 480 */
 }
 
 #nav > a {
@@ -380,7 +348,7 @@ img{
 
 /* Styling for text labels/fields https://codepen.io/andreasstorm/pen/gKGbxo*/
 .inp {
-      display: inline-block;
+      /* display: inline-block; */
       box-sizing:border-box;
       position: relative;
       margin: 0.5em 0.5em 0.5em 0em;
@@ -393,7 +361,7 @@ img{
 /*initial hint*/
 .inp .label {
       position: absolute;
-      top: 16px;
+      /* top: 16px; */
       left: 0;
       font-size: 1em;
       color: #E0865C;
@@ -417,12 +385,12 @@ img{
       -webkit-appearance: none;
       /* width: 100%; */
       border: 0;
-
+      margin-bottom:1.75em;
       max-width:10em;
       font-family: inherit;
-      padding: 0px;
-      height: 48px;
-      font-size: 1.5em;
+      padding-top:1em;
+      /* height: 48px; */
+      font-size: 1em;
       font-weight: 500;
       border-bottom: 2px solid #E0D4B8;
       background: none;
@@ -431,9 +399,10 @@ img{
 }
 
 .inp-date{
-  margin:1.5em 1.5em 1.5em 0;
+  /* margin:0.5em 0em 0.5em 0; */
   font-size:1em;
 }
+
 
 
 
@@ -465,7 +434,7 @@ img{
   /* width: 20%; */
   font-size: 1em;
   color: #60666d;
-  margin:0.5em 0.5em 0.5em 0em;
+  /* margin:0.5em 0.5em 0.5em 0em; */
   max-width:15em;
   /* background-color:#60666d; */
 
@@ -485,6 +454,7 @@ img{
 	/* background-repeat:no-repeat; */
 }
 
+
 @media (max-width: 500px) {
   .select-box {
    width: 70%;
@@ -502,6 +472,10 @@ img{
   cursor: pointer;
   outline: none;
   color:#E0865C;
+  /* margin-top:1.5em; */
+  /* margin-bottom:1.5em; */
+  /* font-size:1.25em; */
+
 
     /* background-image: */
 	/* linear-gradient(45deg, transparent 50%, #60666d 50%), */
@@ -627,6 +601,8 @@ img{
   border:2px dotted black;
   display:flex;
   flex-direction:row;
+  flex-wrap:wrap;
+  margin:1.5em 1em 1.5em 1em;
 }
 
 .receiptborder h2{
@@ -777,6 +753,10 @@ span{
   align-items:flex-end;
 }
 
+#rating{
+  margin:2em 0 2em 0;
+}
+
 
 /* media query stuff */
 
@@ -908,6 +888,12 @@ span{
         font-size:1.125rem;
         line-height: 1.11111111em;
     }
+
+    .select-box{
+      margin:1em 0 1em 0;
+    }
+
+
 
 }
 /* navbar menu */

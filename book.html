@@ -13,7 +13,7 @@
 </head>
 
 
-<body>
+<body background="img/massage/ornament.png">
 
   <header>
     <nav class="flexbox-nav" id= "nav" role="navigation">
@@ -59,7 +59,7 @@
 
     <div class="flexbox-2row-item">
       <h2 class="flexbox-1col">Contact Information</h2>
-      <form>
+      <!-- <form> -->
         <label for="inp" class="inp">
              <input type="text" id="input-firstName" placeholder="&nbsp;">
              <span class="label">First Name</span>
@@ -85,7 +85,7 @@
          <span class="label">Postal Code</span>
          <span class="border"></span>
    </label>
-</form>
+
 
 </div>
 
@@ -93,24 +93,20 @@
 <div class="flexbox-2row-item">
       <h2 class="flexbox-1col">Appointment Information</h2>
 
-      <div class="form-item flexbox-2row-item">
       <label for="date" class="inp" placeholder="&nbsp;">
         <span class="label">Date</span>
         <span class="border"></span>
       <input class="inp-date" type ="date" id="date" name="date">
-      </div>
+    </label>
 
-
-      <div class="form-item flexbox-2row-item">
-      <label for="date" class="inp" placeholder="&nbsp;">
+      <label for="time" class="inp" placeholder="&nbsp;">
         <span class="label">Time</span>
         <span class="border"></span>
-      <input class="inp-date" type ="time" id="date" name="date">
+      <input class="inp-date" type ="time" id="time" name="time">
+    </label>
 
 
-      </div>
-
-      <div class="form-item flexbox-2row-item">
+      <div class="flexbox-1row">
         <select class="select-box__current">
           <option value="0">Duration:</option>
           <option value="1">30 minutes</option>
@@ -119,7 +115,6 @@
           <option value="1">1.5 hours</option>
         </select>
       </div>
-
 </div>
 
 
@@ -129,7 +124,7 @@
 
 </div>
 
-
+<!-- </form> -->
   </section>
 <footer class="footer-distributed">
     <div class="footer-left-logo" class="logo">
@@ -148,11 +143,11 @@
         </p>
 
         <p class="footer-policy-links">
-                    <a href="#">Payment</a>
-                    |
-                    <a href="#">Terms</a>
-                    |
-                    <a href="#">Privacy Statement</a>
+          <a href="#">Payment</a>
+          |
+          <a href="styleguide.html">Styleguide</a>
+          |
+          <a href="citations.html">Citations</a>
                 </p>
       </div>
 
