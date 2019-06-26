@@ -5,6 +5,16 @@ pre code {
 		padding:1em;
 		line-height:1.5em;
 }
+
+.section-body-wrapper{
+  position:relative;
+  margin-top: 2em;
+  margin-left:5%;
+  margin-right:5%;
+  min-height:100vh;
+}
+
+
 .div-maincolour{
 		display:inline-block;
 		background-color:#E0D4B8;
@@ -34,3 +44,34 @@ pre code {
 		display:inline-block;
 		background-color:#424942;
 }
+
+.box{
+	display:flex;
+	flex-flow:row wrap;
+	text-align:center;
+	max-width:100%;
+}
+
+.box-grid-header-sample
+{
+	flex:2 1 100%;
+	background-color:#E0D4B8;
+}
+.box-grid-body-sample
+{
+	flex:1 1 100%;
+	height:10rem;
+	background-color:#2F1D0C;
+	color:white;
+}
+
+.box-grid-body-sample p
+{
+	vertical-align:middle;
+}
+.box-grid-footer-sample
+{
+	flex:1 1 100%;
+	background-color:#A15442;
+}
+

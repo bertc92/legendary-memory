@@ -13,7 +13,7 @@
 
 </head>
 
-<body background="img/massage/ornament.png">
+<body>
   <header>
   <nav class="flexbox-nav" id= "nav" role="navigation">
         <a href="#nav" title="Show navigation">Show navigation</a>
@@ -51,11 +51,11 @@
     <!-- Default Button styling section -->
     <section>
 
-      <h2>Navigation Button</h2>
-      <p>For the navigation bar.</p>
+      <h2><strong>Navigation Button</strong></h2>
+      <p>For the navigation bar. nav ul and nav li have no text-decorations.</p>
 
       <h3>CSS selector:</h3>
-      <p>.button-nav</p>
+      <p>.flexbox-nav</p>
 
 	  <h3>CSS Stylings:</h3>
 	  <pre><p>
@@ -80,12 +80,37 @@
 
 
       <h3>Rendered element:</h3>
-      <a class="button-nav" href="#">Default Button</a>
+	  
+	  
+	<nav class="flexbox-nav" id= "nav" role="navigation">
+      <a href="#nav" title="Show navigation">Show navigation</a>
+        <a href="#" title="Hide navigation">Hide navigation</a>
+        <ul>
+            <li><a href="index.html" aria-haspopup="true"><span>To the site</span></a>
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="index.html#services">Services</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+
+            </li>
+            <!-- styleguide section nav to diff elements of the page -->
+            <li><a href="styleguide.html"><span>Styleguide</span></a>
+                  <ul>
+                    <li><a href="#interactive_elements">Interactive Elements</a></li>
+                    <li><a href="#text_elements">Text Elements</a></li>
+                    <li><a href="#combined_elements">Combined Elements</a></li>
+                  </ul>
+            </li>
+            <li><a href="sitemap.html"><span>Sitemap</span></a></li>
+            <li><a href="citations.html"><span>Citations</span></a></li>
+        </ul>
+	</nav>
 
     </section>
 
     <section>
-      <h2>In-text link</h2>
+      <h2><strong>In-text link</strong></h2>
 
       <h3>CSS selector:</h3>
       <p>.text-link or a</p>
@@ -106,7 +131,7 @@
     </section>
 
     <section>
-      <h2>Submit/Reset Buttons</h2>
+      <h2><strong>Submit/Reset Buttons</strong></h2>
 
       <h3>CSS selector:</h3>
       <p>.button-body</p>
@@ -138,7 +163,7 @@
     </section>
 
     <section>
-      <h2>Text Input Field and Label</h2> <!-- https://codepen.io/andreasstorm/pen/gKGbxo -->
+      <h2><strong>Text Input Field and Label</strong></h2> <!-- https://codepen.io/andreasstorm/pen/gKGbxo -->
 
       <h3>CSS selector:</h3>
       <p>.text-label</p>
@@ -148,9 +173,8 @@
 	  	  <h3>CSS Stylings:</h3>
 	  <pre><p>
   Text Labels:
-  /* Styling for text labels/fields https://codepen.io/andreasstorm/pen/gKGbxo*/
 .inp {
-      display: inline-block;
+      /* display: inline-block; */
       box-sizing:border-box;
       position: relative;
       margin: 0.5em 0.5em 0.5em 0em;
@@ -163,7 +187,7 @@
 /*initial hint*/
 .inp .label {
       position: absolute;
-      top: 16px;
+      /* top: 16px; */
       left: 0;
       font-size: 1em;
       color: #E0865C;
@@ -187,12 +211,12 @@
       -webkit-appearance: none;
       /* width: 100%; */
       border: 0;
-
+      margin-bottom:1.75em;
       max-width:10em;
       font-family: inherit;
-      padding: 0px;
-      height: 48px;
-      font-size: 1.5em;
+      padding-top:1em;
+      /* height: 48px; */
+      font-size: 1em;
       font-weight: 500;
       border-bottom: 2px solid #E0D4B8;
       background: none;
@@ -201,11 +225,9 @@
 }
 
 .inp-date{
-  margin:1.5em 1.5em 1.5em 0;
+  /* margin:0.5em 0em 0.5em 0; */
   font-size:1em;
 }
-
-
 
 .inp input:hover {
     background: rgba(224, 212, 184, 0.15);
@@ -290,7 +312,7 @@ Selectbox
   <section id="text_elements">
 
     <section>
-      <h2>Headings</h2>
+      <h2><strong>Headings</strong></h2>
       <p>Headings use Conglomerate Demi and Medium at 3 em, 2.25 em, and 1.75 em respectively for header levels.</p>
 
       <h3>CSS selector:</h3>
@@ -342,7 +364,7 @@ Selectbox
     </section>
 
     <section>
-      <h2>Paragraphs</h2>
+      <h2><strong>Paragraphs</strong></h2>
       <p>Styled in Merel Light font and 0.5 em margin.</p>
 
       <h3>CSS selector:</h3>
@@ -366,7 +388,7 @@ Selectbox
       </section>
 
       <section>
-        <h2>Bulleted Lists</h2>
+        <h2><strong>Bulleted Lists</strong></h2>
         <p>Styled in default Disc style, 1.25em font size and 0.2em margin.</p>
         <h3>CSS selector:</h3>
         <p>.text-ul</p>
@@ -396,7 +418,7 @@ Selectbox
       </section>
 
       <section>
-        <h2>Numbered Lists</h2>
+        <h2><strong>Numbered Lists</strong></h2>
         <p>Styled in Decimal colored style, 1.15em font size and 0.2em margin.</p>
 
         <h3>CSS selector:</h3>
@@ -432,7 +454,7 @@ Selectbox
     <section id="combined_elements">
 
       <section>
-        <h2>Main Navigation</h2>
+        <h2><strong>Main Navigation</strong></h2>
         <p>Styled in #D6C3A9 bg colour with 65% opacity , block display and 0.3em 0.3em 0em 16% padding.</p>
         <p>Nav items use inline-block, 0.7em 1.4em padding, #FFFFFF bold text in 2.5em size. Transition is a 0.15 sec background-colour ease out into #A15442.</p>
 
@@ -468,7 +490,7 @@ Selectbox
       </section>
 
       <section>
-        <h2>Grid Structure</h2>
+        <h2><strong>Grid Structure</strong></h2>
 
         <p>Done using a flexbox wrap structure.</p>
         <h3>CSS selector:</h3>
@@ -496,25 +518,25 @@ Selectbox
       </section>
 
       <section>
-        <h2>Colour Swatches</h2>
+        <h2><strong>Colour Swatches</strong></h2>
 
         <p>Coloured div with text inside</p>
 
         <h3>CSS selector:</h3>
-        <p>.div-maincolour  .div-secondarycolour .div-thirdcolour .div-fourthcolour</p>
+        <p>.div-maincolour  .div-secondarycolour .div-thirdcolour .div-fourthcolour .div-fifthcolour .div-sixthcolour</p>
 
         <h3>Sample code:</h3>
         <code><pre>
         &lt;div class="div-maincolour"&gt;&lt;p&gt;#E0D4B8&lt;/p&gt; &lt;/div&gt;
         &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#2F1D0C&lt;/p&gt;&lt;/div&gt;
         &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A15442&lt;/p&gt;&lt;/div&gt;
-		&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#E0865C&lt;/p&gt;&lt;/div&gt;
-        &lt;div class="div-fourthcolour"&gt;&lt;p&gt;#91A491&lt;/p&gt;&lt;/div&gt;
-        &lt;div class="div-fourthcolour"&gt;&lt;p&gt;#424942&lt;/p&gt;&lt;/div&gt;</pre></code>
+	&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#E0865C&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-fifthcolour"&gt;&lt;p&gt;#91A491&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-sixthcolour"&gt;&lt;p&gt;#424942&lt;/p&gt;&lt;/div&gt;</pre></code>
 
         <div class="colors">
 		<figure>
-    <div class="div-maincolour"><p>#E0D4B8</p></div>
+		<div class="div-maincolour"><p>#E0D4B8</p></div>
 		<figcaption>Primary Colour</figcaption>
 		</figure>
 
