@@ -50,6 +50,16 @@ pre code {
 	flex-flow:row wrap;
 	text-align:center;
 	max-width:100%;
+	margin:2em;
+	justify-content:center;
+	align-items:center;
+}
+
+.box span{
+	display:inline-block;
+	color:white;
+	vertical-align:middle;
+	line-height:normal;
 }
 
 .box-grid-header-sample
@@ -63,6 +73,19 @@ pre code {
 	height:10rem;
 	background-color:#2F1D0C;
 	color:white;
+}
+
+.box-grid-2body-sample
+{
+	flex:1 1 50%;
+	height:10rem;
+	background-color:#2F1D0C;
+	color:white;
+}
+
+.box-grid-2body-sample:nth-child(odd)
+{
+	background-color:#E0865C;
 }
 
 .box-grid-body-sample p
