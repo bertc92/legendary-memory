@@ -39,7 +39,7 @@
         </ul>
     </nav>
 
-  <h1>A Style Guide for Pennypacker Latex Solutions</h1>
+  <h1>A Style Guide for Indosage</h1>
   <h2>Revised for P02</h2>
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <section id="interactive_elements">
@@ -313,16 +313,45 @@ Selectbox
       <p>Headings use Conglomerate Demi and Medium at 3 em, 2.25 em, and 1.75 em respectively for header levels.</p>
 
       <h3>CSS selector:</h3>
-      <p>.text-h1</p>
-      <p>.text-h2</p>
-      <p>.text-h3</p>
+      <p>h1</p>
+      <p>h2</p>
+      <p>h3</p>
+	  
+	  <h3>CSS Stylings:</h3>
+	  <pre>
+	  <p>
+	h1
+	{
+		font-family: conglomerate,serif;
+		font-weight: 500;
+		font-size:3rem;
+		line-height: 1.05rem;
+	}
+	h2
+	{
+		font-family: conglomerate,serif;
+		font-weight: 500;
+		font-size:2.25rem;
+		line-height: 1.25rem;
+	}
+
+	h3
+	{
+		font-family: conglomerate,serif;
+		font-weight: 500;
+		font-size:1.75rem;
+		line-height: 1.25rem;
+	}
+	  
+	  </p>
+	  </pre>
 
       <h3>Sample code:</h3>
-      <code>&lt;h1 class="text-h1"&gt;Header One&lt;/h1&gt;</code>
+      <code>&lt;h1&gt;Header One&lt;/h1&gt;</code>
 
-      <code>&lt;h2 class="text-h2"&gt;Header Two&lt;/h2&gt;</code>
+      <code>&lt;h2&gt;Header Two&lt;/h2&gt;</code>
 
-      <code>&lt;h3 class="text-h3"&gt;Header Three&lt;/h3&gt;</code>
+      <code>&lt;h3&gt;Header Three&lt;/h3&gt;</code>
 
       <h3>Rendered element:</h3>
       <h1 class="text-h1">Header One</h1>
@@ -333,16 +362,26 @@ Selectbox
 
     <section>
       <h2>Paragraphs</h2>
-      <p>Styled in 1rem size and Merel Light.</p>
+      <p>Styled in Merel Light font and 0.5 em margin.</p>
 
       <h3>CSS selector:</h3>
-      <p>.text-p</p>
+      <p>p</p>
+	  
+	  <h3>CSS Stylings:</h3>
+	  <pre>
+	  <p>
+	  p
+	  {
+	  margin:0.5em;
+	  }
+	  </p>
+	  </pre>
 
       <h3>Sample code:</h3>
-      <code>&lt;p class="text-p"&gt;Paragraph Text&lt;/a&gt;</code>
+      <code>&lt;p&gt;Paragraph Text&lt;/p&gt;</code>
 
       <h3>Rendered element:</h3>
-      <p class="text-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa erat, sodales nec diam a, maximus blandit elit. Ut dapibus ipsum nec arcu posuere, et cursus nunc cursus. Quisque id enim rhoncus, volutpat nulla et, tempus nibh. Nullam posuere, velit et pulvinar efficitur, sapien eros placerat urna, vel cursus libero mi eget turpis. Nunc scelerisque consectetur mi. Aliquam vitae leo at orci malesuada sodales. Vivamus eu nulla ac turpis tincidunt fermentum. Aliquam consequat ex massa, vitae ullamcorper elit tincidunt ac. Nulla volutpat eleifend ornare.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent massa erat, sodales nec diam a, maximus blandit elit. Ut dapibus ipsum nec arcu posuere, et cursus nunc cursus. Quisque id enim rhoncus, volutpat nulla et, tempus nibh. Nullam posuere, velit et pulvinar efficitur, sapien eros placerat urna, vel cursus libero mi eget turpis. Nunc scelerisque consectetur mi. Aliquam vitae leo at orci malesuada sodales. Vivamus eu nulla ac turpis tincidunt fermentum. Aliquam consequat ex massa, vitae ullamcorper elit tincidunt ac. Nulla volutpat eleifend ornare.</p>
       </section>
 
       <section>
