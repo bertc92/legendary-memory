@@ -13,8 +13,8 @@
 </head>
 
 
-<body background="img/massage/ornament.png">
-  <header>
+<body>
+    <header>
     <nav class="flexbox-nav" id= "nav" role="navigation">
             <a href="#nav" title="Show navigation">Show navigation</a>
             <a href="#" title="Hide navigation">Hide navigation</a>
@@ -25,6 +25,32 @@
                       <li><a href="index.html#whyus">Why us?</a></li>
                       <li><a href="index.html#services">Our services</a></li>
                   </ul>
+
+                </li>
+                <!-- styleguide section nav to diff elements of the page -->
+                <li><a href="index.html#services" aria-haspopup="true"><span>Services</span></a>
+                      <ul>
+                        <li><a href="detailedproduct.html">Full body</a></li>
+                        <li><a href="detailedproduct.html">Facial</a></li>
+                        <li><a href="detailedproduct.html">Hot stone</a></li>
+                        <li><a href="detailedproduct.html">Deep Oil</a></li>
+						<li><a href="book.html">Book now!</a></li>
+                      </ul>
+                </li>
+                <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
+                  <ul>
+                    <li><a href="about.html#staff-info">Our Staff</a></li>
+                    <li><a href="about.html#awards">Our Awards</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html"><span>Contact us</span></a>
+                  <ul>
+                    <li><a href="contact.html#about"> Leave a review</a></li>
+                  </ul>
+                </li>
+            </ul>
+    </nav>
+  </header>
 
                 </li>
                 <!-- styleguide section nav to diff elements of the page -->
@@ -51,18 +77,9 @@
     </nav>
   </header>
 
-  <!-- <section class="hero" id="#about_banner">
-	<div class="hero-inner">
-		<h1>An Indonesian Massage Experience</h1>
-    <h2>Some caption here</h2>
-	</div>
-	</section> -->
-
-
-
   <img class="img-banner" src="img/about/banner.jpg">
 
-  <section class="section-body-wrapper flexbox-wrap">
+  <section class="section-body-wrapper">
     <div class="flexbox-rowrap">
       <h1 class="flexbox-1col" id="about">We offer the best service, to suit your needs</h1>
 
@@ -75,8 +92,7 @@
     </div>
     </div>
 
-      <section id="staff-info">
-    <div class="flexbox-rowrap">
+      <section id="staff-info" class="flexbox-rowrap">
     <h2 class="flexbox-1col">Meet our staff</h2>
         <img src="img/about/victoria-house-spa-staff.jpg">
         <p>Our team of therapists from around the world are highly skilled and each of them specializes in different areas of massage.  Here at Indosage, we ensure our therapists provide the best massage and treatments suited to each individual's needs. Every person's body is different hence we take pride in customizing our services to our client's needs.</p>
@@ -92,68 +108,71 @@
         <h3>Passionate</h3>
     <p>Our staff does what they love most: helping you work through any pain, injury, stress or other condition to help you relax, release tension and achieve your wellness goals.</p>
   </div>
-  </div>
-    
+</section>
 
-<section id="awards">
-  <div class="flexbox-rowrap">
+
+  <section id="awards" class="flexbox-rowrap">
     <h2 class="flexbox-1col">Our Awards</h2>
-      <p>Our reputation for providing spa excellence has spread across Metro Vancouver. Please take a moment to view some of our reviews.</p>
+      <p class="flexbox-1col">Our reputation for providing spa excellence has spread across Metro Vancouver. Please take a moment to view some of our reviews.</p>
   <div class="flexbox-3row-item">
       <img src="img/about/news.svg">
       <p>North Shore News Readers Choice 2018 Bronze</p>
   </div>
   <div class="flexbox-3row-item">
-     <img src="img/about/business.svg"> 
+     <img src="img/about/business.svg">
       <p>Certificate of Excellence Top 3 Massage Services</p>
 </div>
       <div class="flexbox-3row-item">
       <img src="img/about/business.svg">
       <p>ThreeBest Rated® Best Business of 2019</p>
   </div>
-</div>
-      </section>
+</section>
   </section>
 </section>
+
+
+
+
+
 <footer class="footer-distributed">
     <div class="footer-left-logo" class="logo">
         <img src="img/home/logo/light-logo@2x.png" >
     </div>
    			<div class="footer-left">
 				<p class="footer-links">
-                    
-					<a href="#">Home</a>
+
+					<a href="index.html">Home</a>
 					<span>&#183;</span>
-					<a href="#">Services</a>
+					<a href="index.html#services">Services</a>
 					<span>&#183;</span>
-					<a href="#">About</a>
+					<a href="about.html">About</a>
 					<span>&#183;</span>
-					<a href="#">Contact Us</a>
+					<a href="contact.html">Contact Us</a>
 				</p>
- 
+
 				<p class="footer-policy-links">
                     <a href="#">Payment</a>
                     |
-                    <a href="#">Terms</a> 
+                    <a href="styleguide.html">Styleguide</a>
                     |
-                    <a href="#">Privacy Statement</a>
+                    <a href="citations.html">Citations</a>
                 </p>
 			</div>
- 
+
 			<div class="footer-center">
 				<div>
-					<i class="adress"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
+					<i class="address"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
 					  <p>Unit 140 – 815, 1st Street,</p>
                     <p>New Westminster, BC, V3L 2H7</p></a>
 				</div>
- 
+
 				<div>
 					<i class="phone"></i>
                     <p><a href="tel:+15555555555">Phone: 236-777-0376</a></p>
 				</div>
 				<div>
 					<i class="email"></i>
-					<p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+					<p><a href="mailto:support@eduonix.com">massages@indosage.com</a></p>
 				</div>
 			</div>
 			<div class="footer-right">
@@ -172,6 +191,7 @@
                     </a>
 				</div>
 			</div>
+
 </footer>
 
 </body>

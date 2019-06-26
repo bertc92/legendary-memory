@@ -15,7 +15,7 @@
 
 <body>
 
-  <header>
+   <header>
     <nav class="flexbox-nav" id= "nav" role="navigation">
             <a href="#nav" title="Show navigation">Show navigation</a>
             <a href="#" title="Hide navigation">Hide navigation</a>
@@ -35,6 +35,7 @@
                         <li><a href="detailedproduct.html">Facial</a></li>
                         <li><a href="detailedproduct.html">Hot stone</a></li>
                         <li><a href="detailedproduct.html">Deep Oil</a></li>
+						<li><a href="book.html">Book now!</a></li>
                       </ul>
                 </li>
                 <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
@@ -108,129 +109,96 @@
       <h2 class="flexbox-1col">Payment Method</h2>
 
       <div class="flexbox-1col">
-      <div class="form-item">
         <label for="inp" class="inp">
              <input type="text" id="input-email" placeholder="&nbsp;">
              <span class="label">Credit Card Number</span>
              <span class="border"></span>
        </label>
+
        <label for="inp" class="inp">
             <input type="text" id="input-email" placeholder="&nbsp;">
             <span class="label">CVV</span>
             <span class="border"></span>
       </label>
-      </div>
+    </div>
 
 
 
-      <div class="select-box">
-        <div class="select-box__current" tabindex="0">
-              <div class="select-box__value">
-                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked/>
-                    <p class="select-box__input-text">Payment Method</p>
-              </div>
-              <div class="select-box__value">
-                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben"/>
-                    <p class="select-box__input-text">Visa</p>
-              </div>
-              <div class="select-box__value">
-                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben"/>
-                    <p class="select-box__input-text">Debit</p>
-              </div>
-              <div class="select-box__value">
-                    <input class="select-box__input" type="radio" id="3" value="4" name="Ben"/>
-                    <p class="select-box__input-text">Cash</p>
-              </div>
-              <div class="select-box__value">
-                    <input class="select-box__input" type="radio" id="4" value="5" name="Ben"/>
-                    <p class="select-box__input-text">Cheque</p>
-              </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-        </div>
-        <ul class="select-box__list">
-              <!-- <li>
-                  <label class="select-box__option" for="0" aria-hidden="aria-hidden">Payment Method</label>
-              </li> -->
-              <li>
-                  <label class="select-box__option" for="1" aria-hidden="aria-hidden">Visa</label>
-              </li>
-              <li>
-                  <label class="select-box__option" for="2" aria-hidden="aria-hidden">Debit</label>
-              </li>
-              <li>
-                  <label class="select-box__option" for="3" aria-hidden="aria-hidden">Cash</label>
-              </li>
-              <li>
-                  <label class="select-box__option" for="4" aria-hidden="aria-hidden">Cheque</label>
-              </li>
-        </ul>
-      </div>
+      <div class="select-box flexbox-1col">
+          <select class="select-box__current">
+            <option value="0">Payment Method:</option>
+            <option value="1">VISA</option>
+            <option value="1">Debit</option>
+            <option value="1">Cash</option>
+            <option value="1">Cheque</option>
+          </select>
       </div>
 </div>
 
       <div class="flexbox-1col">
       <a href="confirmed.html"><input class="button-body button-book" type="submit" value="Submit"></a>
       </div>
-	  
-	  
-	  </div>
+
+
   </section>
+
 <footer class="footer-distributed">
     <div class="footer-left-logo" class="logo">
         <img src="img/home/logo/light-logo@2x.png" >
     </div>
-        <div class="footer-left">
-        <p class="footer-links">
-                    
-          <a href="#">Home</a>
-          <span>&#183;</span>
-          <a href="#">Services</a>
-          <span>&#183;</span>
-          <a href="#">About</a>
-          <span>&#183;</span>
-          <a href="#">Contact Us</a>
-        </p>
- 
-        <p class="footer-policy-links">
+   			<div class="footer-left">
+				<p class="footer-links">
+
+					<a href="index.html">Home</a>
+					<span>&#183;</span>
+					<a href="index.html#services">Services</a>
+					<span>&#183;</span>
+					<a href="about.html">About</a>
+					<span>&#183;</span>
+					<a href="contact.html">Contact Us</a>
+				</p>
+
+				<p class="footer-policy-links">
                     <a href="#">Payment</a>
                     |
-                    <a href="#">Terms</a> 
+                    <a href="styleguide.html">Styleguide</a>
                     |
-                    <a href="#">Privacy Statement</a>
+                    <a href="citations.html">Citations</a>
                 </p>
-      </div>
- 
-      <div class="footer-center">
-        <div>
-          <i class="adress"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
-            <p>Unit 140 – 815, 1st Street,</p>
+			</div>
+
+			<div class="footer-center">
+				<div>
+					<i class="address"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
+					  <p>Unit 140 – 815, 1st Street,</p>
                     <p>New Westminster, BC, V3L 2H7</p></a>
-        </div>
- 
-        <div>
-          <i class="phone"></i>
+				</div>
+
+				<div>
+					<i class="phone"></i>
                     <p><a href="tel:+15555555555">Phone: 236-777-0376</a></p>
-        </div>
-        <div>
-          <i class="email"></i>
-          <p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
-        </div>
-      </div>
-      <div class="footer-right">
-        <p class="footer-company-about">
-          Follow Us
-        </p>
-        <div class="footer-icons">
-          <a href="#">
+				</div>
+				<div>
+					<i class="email"></i>
+					<p><a href="mailto:support@eduonix.com">massages@indosage.com</a></p>
+				</div>
+			</div>
+			<div class="footer-right">
+				<p class="footer-company-about">
+					Follow Us
+				</p>
+				<div class="footer-icons">
+					<a href="#">
                         <img src="img/home/services/SVG/insta.svg">
                     </a>
-          <a href="#">
+					<a href="#">
                         <img src="img/home/services/SVG/twitter.svg">
                     </a>
-          <a href="#">
+					<a href="#">
                         <img src="img/home/services/SVG/facebook.svg">
                     </a>
-        </div>
-      </div>
+				</div>
+			</div>
 
 </footer>
 

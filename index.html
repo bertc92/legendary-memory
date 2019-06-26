@@ -13,7 +13,7 @@
 </head>
 
 
-<body background="img/massage/ornament.png">
+<body>
   <header>
     <nav class="flexbox-nav" id= "nav" role="navigation">
             <a href="#nav" title="Show navigation">Show navigation</a>
@@ -34,6 +34,7 @@
                         <li><a href="detailedproduct.html">Facial</a></li>
                         <li><a href="detailedproduct.html">Hot stone</a></li>
                         <li><a href="detailedproduct.html">Deep Oil</a></li>
+						<li><a href="book.html">Book now!</a></li>
                       </ul>
                 </li>
                 <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
@@ -51,19 +52,10 @@
     </nav>
   </header>
     <img class="img-banner" src="img/home/ban1.jpg">
-<!--
-  <section class="hero">
-	<div class="hero-inner">
-		<h1>An Indonesian Massage Experience</h1>
-    <h2>Some caption here</h2>
-	</div>
-	</section>
--->
+
   <section class="section-body-wrapper">
 
-  <!-- <img class="img-banner" src="img/massage/home_banner.png"> -->
-
-  <div class="flexbox-rowrap">
+  <section id="history" class="flexbox-rowrap">
   <h2 class="flexbox-1col"> An Indonesian Massage Experience</h2>
   <div class="flexbox-2row-item">
         <h3>History</h3>
@@ -73,27 +65,29 @@
   <div class="flexbox-2row-item">
       <p>Indonesia massage therapy traces back to 4000 years ago and back then was used as the main source of medical care for people, there certainly wasn’t the medical services that you would find today and definitely no National Health Services! You would have especially  found that royalties during this time used this type of massage as a treatment to help them to relax and to relieve them off stress.</p>
   </div>
-</div>
+</section>
 
-<div class="flexbox-rowrap">
+<section id="benefits" class="flexbox-rowrap">
   <h3 class="flexbox-1col" id="benefits">Benefits</h3>
  <img  src="img/home/SVG/toolsldpi.svg" title="massage tools">
 	<div class="flexbox-2row-item">
 	   <p>An Indonesian massage is strongly therapeutic and regenerative and will last around 90 minutes. Strong pushing techniques predominate, working extremely deeply to stimulate and relax the soft tissues and clear the body of blockages along the meridians and release built up tension. The massage, along with the use of coconut oil, which is used as the medium for Indonesian massage also helps release toxins, relieves tension and improves blood circulation.</p>
 	   <p>With an Indonesian massage you will find it is not only therapeutic but also corrective, as it can soothe stiff and painful muscles while also alleviating abdominal complaints such as constipation, indigestion, bloating, heartburn and irritable bowel syndrome (IBS). By concentrating on the meridian energy lines which run through the body, the massage produces a holistic healing experience for the whole body.</p> </div>
-	</div>
-  
-  <div class="flexbox-rowrap">
+</section>
+
+  <section id="whyus" class="flexbox-rowrap">
   <h3 class="flexbox-1col" id="whyus">Why Us?</h3>
   <div class="flexbox-2row-item">
        <p>Here at Indosage we work closely with our clients ensuring they are given the most satisfying and relaxing treatment whilst getting to know their preferences and building on lasting relationships. We are registered with the RQIA , the regulation and quality improvement authority, our standards of hygiene and attention to detail are second to none; our therapists pay attention to quality and apply their full skill, care and effort each and every day, working tirelessly to ensure our clients want to return again and again.
 	   <p>As such, we at Indosage give you our assurance of the highest standards of quality and safety within the aesthetic industry. We place ethics at the centre of our practice, and in light of this we listen to you first.</p>
 	   <p> Learn more about our long history, achivments and get to know our staff.</p>
        <a class="button-nav" href="about.html">Learn More!</a>
-  </div>    
- <img class="right" src="img/home/SVG/girlldpi.svg" title="massage tools"> 
-      </div>
-    <div class="flexbox-rowrap">
+  </div>
+ <img class="right" src="img/home/SVG/girlldpi.svg" title="massage tools">
+</section>
+
+
+  <section id="testimonials" class="flexbox-rowrap">
     <h2 class="flexbox-1col">Testimonials</h2>
     <img  src="img/home/testimonials@3x.jpg">
     <div class="flexbox-3row-item">
@@ -105,12 +99,12 @@
     <div class="flexbox-3row-item">
          <p><span>&#171;</span> So relaxed after coming to this place, I tell ya. I made an appointment for a couple's massage, and it was excellent on so many levels. <span>&#187;</span> - Brittany G. Surrey, BC</p>
     </div>
-      </div>
+  </section>
 
-<div class="flexbox-rowrap">
+<section id="offers" class="flexbox-rowrap">
   <h2 class="flexbox-1col" id="services">What We Offer</h2>
 
-  <div class="flexbox-norowrap flexbox-1col">
+  <div id="benefits-top" class="flexbox-norowrap flexbox-1col">
 
   <div class="flexbox-3row-item figure-benefits">
   <h4>Hot Stone Massage</h4>
@@ -126,13 +120,13 @@
   </div>
   <div class="flexbox-3row-item figure-benefits">
       <h4>Full Facial Massage</h4>
-      <a href="detailedproduct.html"> 
+      <a href="detailedproduct.html">
         <img src="img/home/services/faceldpi.svg"  alt="Facial massage">
       </a>
   </div>
 </div>
-</div>
-  <div class="flexbox-massages-padding flexbox-rowrap  flexbox-1col">
+
+  <div id="benefits-bottom" class="flexbox-massages-padding flexbox-rowrap  flexbox-1col">
     <div class="flexbox-2row-item figure-benefits">
     <h4>Full Body Massage</h4>
     <a href="detailedproduct.html">
@@ -146,48 +140,50 @@
     </div>
   </div>
 
-</section>  
-    
-    
+</section>
+
+</section>
+
+
 <footer class="footer-distributed">
     <div class="footer-left-logo" class="logo">
         <img src="img/home/logo/light-logo@2x.png" >
     </div>
    			<div class="footer-left">
 				<p class="footer-links">
-                    
-					<a href="#">Home</a>
+
+					<a href="index.html">Home</a>
 					<span>&#183;</span>
-					<a href="#">Services</a>
+					<a href="index.html#services">Services</a>
 					<span>&#183;</span>
-					<a href="#">About</a>
+					<a href="about.html">About</a>
 					<span>&#183;</span>
-					<a href="#">Contact Us</a>
+					<a href="contact.html">Contact Us</a>
 				</p>
- 
+
 				<p class="footer-policy-links">
                     <a href="#">Payment</a>
                     |
-                    <a href="#">Terms</a> 
+                    <a href="styleguide.html">Styleguide</a>
                     |
-                    <a href="#">Privacy Statement</a>
+                    <a href="citations.html">Citations</a>
                 </p>
 			</div>
- 
+
 			<div class="footer-center">
 				<div>
-					<i class="adress"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
+					<i class="address"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
 					  <p>Unit 140 – 815, 1st Street,</p>
                     <p>New Westminster, BC, V3L 2H7</p></a>
 				</div>
- 
+
 				<div>
 					<i class="phone"></i>
                     <p><a href="tel:+15555555555">Phone: 236-777-0376</a></p>
 				</div>
 				<div>
 					<i class="email"></i>
-					<p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+					<p><a href="mailto:support@eduonix.com">massages@indosage.com</a></p>
 				</div>
 			</div>
 			<div class="footer-right">

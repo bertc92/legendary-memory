@@ -13,8 +13,9 @@
 
 </head>
 
-<body background="img/massage/ornament.png">
-  <nav id= "nav" role="navigation">
+<body>
+  <header>
+  <nav class="flexbox-nav" id= "nav" role="navigation">
         <a href="#nav" title="Show navigation">Show navigation</a>
         <a href="#" title="Hide navigation">Hide navigation</a>
         <ul>
@@ -38,21 +39,24 @@
             <li><a href="citations.html"><span>Citations</span></a></li>
         </ul>
     </nav>
+  </header>
+
+<section class="section-body-wrapper">
 
   <h1>A Style Guide for Indosage</h1>
-  <h2>Revised for P02</h2>
+
   <!-- INTERACTIVE ELEMENTS SECTION // -->
   <section id="interactive_elements">
 
     <!-- Default Button styling section -->
     <section>
 
-      <h2>Navigation Button</h2>
-      <p>For the navigation bar.</p>
+      <h2><strong>Navigation Button</strong></h2>
+      <p>For the navigation bar. nav ul and nav li have no text-decorations.</p>
 
       <h3>CSS selector:</h3>
-      <p>.button-nav</p>
-	  
+      <p>.flexbox-nav</p>
+
 	  <h3>CSS Stylings:</h3>
 	  <pre><p>
 	margin: 2em;
@@ -72,20 +76,45 @@
       <h3>Sample code:</h3>
       <pre><code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
 	  </pre>
-	  
+
 
 
       <h3>Rendered element:</h3>
-      <a class="button-nav" href="#">Default Button</a>
+
+
+	<nav class="flexbox-nav" id= "nav" role="navigation">
+      <a href="#nav" title="Show navigation">Show navigation</a>
+        <a href="#" title="Hide navigation">Hide navigation</a>
+        <ul>
+            <li><a href="index.html" aria-haspopup="true"><span>To the site</span></a>
+                <ul>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="index.html#services">Services</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+
+            </li>
+            <!-- styleguide section nav to diff elements of the page -->
+            <li><a href="styleguide.html"><span>Styleguide</span></a>
+                  <ul>
+                    <li><a href="#interactive_elements">Interactive Elements</a></li>
+                    <li><a href="#text_elements">Text Elements</a></li>
+                    <li><a href="#combined_elements">Combined Elements</a></li>
+                  </ul>
+            </li>
+            <li><a href="sitemap.html"><span>Sitemap</span></a></li>
+            <li><a href="citations.html"><span>Citations</span></a></li>
+        </ul>
+	</nav>
 
     </section>
 
     <section>
-      <h2>In-text link</h2>
+      <h2><strong>In-text link</strong></h2>
 
       <h3>CSS selector:</h3>
       <p>.text-link or a</p>
-	  
+
 	  <h3>CSS Stylings:</h3>
 	  <pre><p>
   font-weight:500;
@@ -102,11 +131,29 @@
     </section>
 
     <section>
-      <h2>Submit/Reset Buttons</h2>
+      <h2><strong>Submit/Reset Buttons</strong></h2>
 
       <h3>CSS selector:</h3>
       <p>.button-body</p>
 	  
+	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+	display: inline-block;
+	background-image: linear-gradient(#E0865C, #A34C35);
+	border-radius: 0.12em;
+	padding: 0.4em 1.3em 0.6em 1.3em;
+	color: white;
+	font-size: 1em;
+	line-height:normal;
+	text-align: center;
+	font-weight:500;
+	text-transform: capitalize;
+	text-decoration: NONE;
+	max-width:10em;
+	-webkit-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+	  </p></pre>
+
 	  <h3>CSS Stylings:</h3>
 	  <pre><p>
 	display: inline-block;
@@ -134,7 +181,7 @@
     </section>
 
     <section>
-      <h2>Text Input Field and Label</h2> <!-- https://codepen.io/andreasstorm/pen/gKGbxo -->
+      <h2><strong>Text Input Field and Label</strong></h2> <!-- https://codepen.io/andreasstorm/pen/gKGbxo -->
 
       <h3>CSS selector:</h3>
       <p>.text-label</p>
@@ -154,12 +201,25 @@
       max-width: 280px;
       flex:1 1 50%;
 
+
+	  	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+  Text Labels:
+.inp {
+      /* display: inline-block; */
+      box-sizing:border-box;
+      position: relative;
+      margin: 0.5em 0.5em 0.5em 0em;
+      width: 100%;
+      max-width: 280px;
+      flex:1 1 50%;
+
 }
 
 /*initial hint*/
 .inp .label {
       position: absolute;
-      top: 16px;
+      /* top: 16px; */
       left: 0;
       font-size: 1em;
       color: #E0865C;
@@ -183,12 +243,12 @@
       -webkit-appearance: none;
       /* width: 100%; */
       border: 0;
-
+      margin-bottom:1.75em;
       max-width:10em;
       font-family: inherit;
-      padding: 0px;
-      height: 48px;
-      font-size: 1.5em;
+      padding-top:1em;
+      /* height: 48px; */
+      font-size: 1em;
       font-weight: 500;
       border-bottom: 2px solid #E0D4B8;
       background: none;
@@ -197,11 +257,9 @@
 }
 
 .inp-date{
-  margin:1.5em 1.5em 1.5em 0;
+  /* margin:0.5em 0em 0.5em 0; */
   font-size:1em;
 }
-
-
 
 .inp input:hover {
     background: rgba(224, 212, 184, 0.15);
@@ -239,6 +297,17 @@ Selectbox
       <h3>Sample code:</h3>
       <code>&lt;label for="sample" class="input-text"&gt;Text Label&lt;/label&gt;</code>
       <code>&lt;input class="input-text"type ="text" id="sample" name="sample"&gt;</code>
+      <pre>
+          &lt;div class="form-item flexbox-2row-item">
+            &lt;select class="select-box__current"&gt;
+              &lt;option value="0">Duration:&lt;/option&gt;
+              &lt;option value="1">30 minutes&lt;/option&gt;
+              &lt;option value="1">45 minutes&lt;/option&gt;
+              &lt;option value="1">1 hour&lt;/option&gt;
+              &lt;option value="1">1.5 hours&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+      </pre>
 
       <h3>Rendered element:</h3>
 
@@ -258,50 +327,16 @@ Selectbox
               <span class="border"></span>
         </label>
 
-<!--selsect drop https://codepen.io/miniven/pen/ZJydge -->
-            <div class="select-box">
-              <div class="select-box__current" tabindex="1">
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">Duration</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="1" value="2" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">30 minutes</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="2" value="3" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">45 minutes</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="3" value="4" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">1 hour</p>
-                    </div>
-                    <div class="select-box__value">
-                          <input class="select-box__input" type="radio" id="4" value="5" name="Ben" checked="checked"/>
-                          <p class="select-box__input-text">1.30 hour</p>
-                    </div><img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-              </div>
-              <ul class="select-box__list">
-                    <li>
-                        <label class="select-box__option" for="0" aria-hidden="aria-hidden">Duration</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="1" aria-hidden="aria-hidden">30 minutes</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="2" aria-hidden="aria-hidden">45 minutes</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="3" aria-hidden="aria-hidden">1 hour</label>
-                    </li>
-                    <li>
-                        <label class="select-box__option" for="4" aria-hidden="aria-hidden">1.30 hours</label>
-                    </li>
-              </ul>
-            </div>   <!-- end of select drop group-->
+      <div>
+        <select class="select-box__current">
+          <option value="0">Duration:</option>
+          <option value="1">30 minutes</option>
+          <option value="1">45 minutes</option>
+          <option value="1">1 hour</option>
+          <option value="1">1.5 hours</option>
+        </select>
+      </div>
       </section>
-  </section>
   <!-- // INTERACTIVE ELEMENTS SECTION END -->
 
 
@@ -309,14 +344,14 @@ Selectbox
   <section id="text_elements">
 
     <section>
-      <h2>Headings</h2>
+      <h2><strong>Headings</strong></h2>
       <p>Headings use Conglomerate Demi and Medium at 3 em, 2.25 em, and 1.75 em respectively for header levels.</p>
 
       <h3>CSS selector:</h3>
       <p>h1</p>
       <p>h2</p>
       <p>h3</p>
-	  
+
 	  <h3>CSS Stylings:</h3>
 	  <pre>
 	  <p>
@@ -342,7 +377,7 @@ Selectbox
 		font-size:1.75rem;
 		line-height: 1.25rem;
 	}
-	  
+
 	  </p>
 	  </pre>
 
@@ -361,12 +396,12 @@ Selectbox
     </section>
 
     <section>
-      <h2>Paragraphs</h2>
+      <h2><strong>Paragraphs</strong></h2>
       <p>Styled in Merel Light font and 0.5 em margin.</p>
 
       <h3>CSS selector:</h3>
       <p>p</p>
-	  
+
 	  <h3>CSS Stylings:</h3>
 	  <pre>
 	  <p>
@@ -385,10 +420,25 @@ Selectbox
       </section>
 
       <section>
-        <h2>Bulleted Lists</h2>
+        <h2><strong>Bulleted Lists</strong></h2>
         <p>Styled in default Disc style, 1.25em font size and 0.2em margin.</p>
         <h3>CSS selector:</h3>
         <p>.text-ul</p>
+
+        <h3>CSS Stylings:</h3>
+    	  <pre>
+    	  <p>
+        ul
+        {
+        list-style-type:disc;
+        }
+
+        li
+        {
+          display:list-item;
+        }
+    	  </p>
+    	  </pre>
 
         <h3>Sample code:</h3>
         <code>&lt;ul class="text-ul"&gt; &lt;li&gt;Text&lt;/li&gt; &lt;/ul&gt;</code>
@@ -405,11 +455,25 @@ Selectbox
       </section>
 
       <section>
-        <h2>Numbered Lists</h2>
+        <h2><strong>Numbered Lists</strong></h2>
         <p>Styled in Decimal colored style, 1.15em font size and 0.2em margin.</p>
 
         <h3>CSS selector:</h3>
         <p>.text-ol</p>
+
+        <h3>CSS Stylings:</h3>
+    	  <pre>
+    	  <p>
+        ol
+        {
+          list-style-type: decimal;
+        }
+        li
+        {
+          display:list-item;
+        }
+    	  </p>
+    	  </pre>
 
         <h3>Sample code:</h3>
         <code>&lt;ol class="text-ol"&gt; &lt;li&gt;Text&lt;/li&gt; &lt;/ol&gt;</code>
@@ -430,13 +494,23 @@ Selectbox
     <!-- COMBINED ELEMENTS SECTION // -->
     <section id="combined_elements">
 
-      <section>
-        <h2>Main Navigation</h2>
+      <!-- <section>
+        <h2><strong>Main Navigation</strong></h2>
         <p>Styled in #D6C3A9 bg colour with 65% opacity , block display and 0.3em 0.3em 0em 16% padding.</p>
         <p>Nav items use inline-block, 0.7em 1.4em padding, #FFFFFF bold text in 2.5em size. Transition is a 0.15 sec background-colour ease out into #A15442.</p>
 
         <h3>CSS selector:</h3>
         <p>.nav-main  .nav-main-item</p>
+
+        <h3>CSS Stylings:</h3>
+    	  <pre>
+    	  <p>
+    	  p
+    	  {
+
+    	  }
+    	  </p>
+    	  </pre>
 
         <h3>Sample code:</h3>
         <code>
@@ -454,27 +528,10 @@ Selectbox
          <a href="#" class="nav-main-item">About</a>
          <a href="#" class="nav-main-item">Contact</a>
        </nav>
-      </section>
+      </section> -->
 
       <section>
-        <h2>Product Listing</h2>
-        <p>Done using a flexbox wrap structure.</p>
-        <h3>CSS selector:</h3>
-        <p>.box  .box-nav .box-nav-item</p>
-
-        <h3>Sample code:</h3>
-        <code></code>
-        <h3>Rendered element:</h3>
-        <div class="box">
-
-      </div>
-
-
-
-      </section>
-
-      <section>
-        <h2>Grid Structure</h2>
+        <h2><strong>Grid Structure</strong></h2>
 
         <p>Done using a flexbox wrap structure.</p>
         <h3>CSS selector:</h3>
@@ -491,36 +548,43 @@ Selectbox
 
 
 <h3>Rendered element:</h3>
+
+		<h3>1 Column Body</h3>
         <div class="box">
           <div class="box-grid-header-sample"><p>Header/Navbar</p></div>
-		  <!-- <div class="box-grid-padding"><p>Padding</p></div> -->
           <div class="box-grid-body-sample"><p>Body</p></div>
-		  <!-- <div class="box-grid-padding"><p>Padding</p></div> -->
           <div class="box-grid-footer-sample"><p>Footer</p></div>
-          <!-- <div class="box-grid-header">Header/Navbar</div> -->
         </div>
+
+		<h3>2 Column Body</h3>
+		<div class="box">
+		  <div class="box-grid-header-sample"><span>Header/Navbar</span></div>
+          <div class="box-grid-2body-sample"><span>Body</span></div>
+		  <div class="box-grid-2body-sample"><span>Body</span></div>
+          <div class="box-grid-footer-sample"><span>Footer</span></div>
+		</div>
       </section>
 
       <section>
-        <h2>Colour Swatches</h2>
+        <h2><strong>Colour Swatches</strong></h2>
 
         <p>Coloured div with text inside</p>
 
         <h3>CSS selector:</h3>
-        <p>.div-maincolour  .div-secondarycolour .div-thirdcolour .div-fourthcolour</p>
+        <p>.div-maincolour  .div-secondarycolour .div-thirdcolour .div-fourthcolour .div-fifthcolour .div-sixthcolour</p>
 
         <h3>Sample code:</h3>
         <code><pre>
         &lt;div class="div-maincolour"&gt;&lt;p&gt;#E0D4B8&lt;/p&gt; &lt;/div&gt;
         &lt;div class="div-secondarycolour"&gt;&lt;p&gt;#2F1D0C&lt;/p&gt;&lt;/div&gt;
         &lt;div class="div-thirdcolour"&gt;&lt;p&gt;#A15442&lt;/p&gt;&lt;/div&gt;
-		&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#E0865C&lt;/p&gt;&lt;/div&gt;
-        &lt;div class="div-fourthcolour"&gt;&lt;p&gt;#91A491&lt;/p&gt;&lt;/div&gt;
-        &lt;div class="div-fourthcolour"&gt;&lt;p&gt;#424942&lt;/p&gt;&lt;/div&gt;</pre></code>
+	&lt;div class="div-fourthcolour"&gt;&lt;p&gt;#E0865C&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-fifthcolour"&gt;&lt;p&gt;#91A491&lt;/p&gt;&lt;/div&gt;
+        &lt;div class="div-sixthcolour"&gt;&lt;p&gt;#424942&lt;/p&gt;&lt;/div&gt;</pre></code>
 
         <div class="colors">
 		<figure>
-        <div class="div-maincolour"><p>#E0D4B8</p></div>
+		<div class="div-maincolour"><p>#E0D4B8</p></div>
 		<figcaption>Primary Colour</figcaption>
 		</figure>
 
@@ -540,7 +604,7 @@ Selectbox
 		</figure>
 
           <figure>
-		<div class="div-fifththcolour"><p>#91A491</p></div>
+		<div class="div-fifthcolour"><p>#91A491</p></div>
 		<figcaption>Accent Colour</figcaption>
 		</figure>
 
@@ -555,6 +619,69 @@ Selectbox
     </section>
     <!-- // COMBINED ELEMENTS SECTION -->
 
+</section>
+</section>
 
+
+
+    <footer class="footer-distributed">
+        <div class="footer-left-logo" class="logo">
+            <img src="img/home/logo/light-logo@2x.png" >
+        </div>
+            <div class="footer-left">
+            <p class="footer-links">
+
+              <a href="#">Home</a>
+              <span>&#183;</span>
+              <a href="#">Services</a>
+              <span>&#183;</span>
+              <a href="#">About</a>
+              <span>&#183;</span>
+              <a href="#">Contact Us</a>
+            </p>
+
+            <p class="footer-policy-links">
+                        <a href="#">Payment</a>
+                        |
+                        <a href="styleguide.html">Styleguide</a>
+                        |
+                        <a href="citations.html">Citations</a>
+                    </p>
+          </div>
+
+          <div class="footer-center">
+            <div>
+              <i class="address"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
+                <p>Unit 140 – 815, 1st Street,</p>
+                        <p>New Westminster, BC, V3L 2H7</p></a>
+            </div>
+
+            <div>
+              <i class="phone"></i>
+                        <p><a href="tel:+15555555555">Phone: 236-777-0376</a></p>
+            </div>
+            <div>
+              <i class="email"></i>
+              <p><a href="mailto:support@eduonix.com">massages@indosage.com</a></p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <p class="footer-company-about">
+              Follow Us
+            </p>
+            <div class="footer-icons">
+              <a href="#">
+                            <img src="img/home/services/SVG/insta.svg">
+                        </a>
+              <a href="#">
+                            <img src="img/home/services/SVG/twitter.svg">
+                        </a>
+              <a href="#">
+                            <img src="img/home/services/SVG/facebook.svg">
+                        </a>
+            </div>
+          </div>
+
+    </footer>
   </body>
   </html>
