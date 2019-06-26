@@ -1,111 +1,196 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-  <title>Pennypacker Massage Solutions</title>
-  <meta name="description" content="Pennypacker Massage Solutions">
+  <title>Indosage - Book An Appointment</title>
+  <meta name="description" content="Indosage Booking Form">
   <meta name="author" content="Bert Cheung & Polina Chzhan">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/flexbox.css">
   <link rel="stylesheet" href="css/font.css">
-
 </head>
+
 
 <body>
 
-<div class="box">
-<header class="box-grid-header">
-  <nav id= "nav" role="navigation">
-        <a href="#nav" title="Show navigation">Show navigation</a>
-        <a href="#" title="Hide navigation">Hide navigation</a>
-        <ul>
-            <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
-                <ul>
-                  <li><a href="index.html#about">What is Indonisian Massage?</a></li>
-                  <li><a href="index.html#whyus">Why us?</a></li>
-                  <li><a href="index.html#services">Our services</a></li>
-              </ul>
-
-            </li>
-            <!-- styleguide section nav to diff elements of the page -->
-            <li><a href="index.html#services" aria-haspopup="true"><span>Services</span></a>
-                  <ul>
-                    <li><a href="detailedproduct.html">Full body</a></li>
-                    <li><a href="detailedproduct.html">Facial</a></li>
-                    <li><a href="detailedproduct.html">Hot stone</a></li>
-                    <li><a href="detailedproduct.html">Deep Oil</a></li>
+  <header>
+    <nav class="flexbox-nav" id= "nav" role="navigation">
+            <a href="#nav" title="Show navigation">Show navigation</a>
+            <a href="#" title="Hide navigation">Hide navigation</a>
+            <ul>
+                <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
+                    <ul>
+                      <li><a href="index.html#about">What is Indonisian Massage?</a></li>
+                      <li><a href="index.html#whyus">Why us?</a></li>
+                      <li><a href="index.html#services">Our services</a></li>
                   </ul>
-            </li>
-            <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
-              <ul>
-                <li><a href="about.html#staff-info">Our Staff</a></li>
-                <li><a href="about.html#awards">Our Awards</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html"><span>Contact us</span></a>
-              <ul>
-                <li><a href="contact.html#about"> Leave a review</a></li>
-              </ul>
-            </li>
-        </ul>
+
+                </li>
+                <!-- styleguide section nav to diff elements of the page -->
+                <li><a href="index.html#services" aria-haspopup="true"><span>Services</span></a>
+                      <ul>
+                        <li><a href="detailedproduct.html">Full body</a></li>
+                        <li><a href="detailedproduct.html">Facial</a></li>
+                        <li><a href="detailedproduct.html">Hot stone</a></li>
+                        <li><a href="detailedproduct.html">Deep Oil</a></li>
+                      </ul>
+                </li>
+                <li><a href="about.html" aria-haspopup="true"><span>Who we are</span></a>
+                  <ul>
+                    <li><a href="about.html#staff-info">Our Staff</a></li>
+                    <li><a href="about.html#awards">Our Awards</a></li>
+                  </ul>
+                </li>
+                <li><a href="contact.html"><span>Contact us</span></a>
+                  <ul>
+                    <li><a href="contact.html#about"> Leave a review</a></li>
+                  </ul>
+                </li>
+            </ul>
     </nav>
-</header>
+  </header>
 
-<div class="box-div-wrapper">
-  <h1>Book an Appointment</h1>
-  <section class="box-item-section">
-  <div class="form-container">
-    <h2>Contact Information</h2>
-    <div class="form-item">
-    <label for="fname" class="text-label">First Name</label>
-    <input class="input-text" type ="text" id="fname" name="fname">
-    </div>
-    <div class="form-item">
-    <label for="lname" class="text-label">Last Name</label>
-    <input class="input-text" type ="text" id="lname" name="lname">
-    </div>
-    <div class="form-item">
-  <label for="email" class="text-label">Email</label>
-  <input class="input-text" type ="text" id="email" name="email">
-  </div>
-      <div class="form-item">
-    <label for="address" class="text-label">Address</label>
-    <input class="input-text" type ="text" id="address" name="address">
-    </div>
-      <div class="form-item">
-    <label for="pcode" class="text-label">Postal Code</label>
-    <input class="input-text" type ="text" id="pcode" name="pcode">
-    </div>
-    <h2>Appointment Information</h2>
-    <div class="form-item">
-    <label for="date" class="text-label">Date</label>
-    <input class="input-text"type ="date" id="date" name="date">
-    </div>
-    <div class="form-item">
-    <label for="number" class="text-label">Time</label>
-    <input class="input-text"type ="number" id="number" name="number" min="1" max="10"> Hours
-    </div>
-
-    <input class="button-body button-book" type="submit" value="Submit">
-  </div>
+  <section class="section-body-wrapper">
+    <div class="flexbox-rowrap">
+    <h1 class="flexbox-1col">Book an Appointment</h1>
 
 
-
-
-
-
-  </div>
-
-  <section class="box-grid-footer">
-  <footer>
-  <p>IAT334 D101 Bert Cheung & Polina Chzhan</p>
-  </footer>
-  </section>
+    <div class="flexbox-2row-item">
+      <h2 class="flexbox-1col">Contact Information</h2>
+      <form>
+        <label for="inp" class="inp">
+             <input type="text" id="input-firstName" placeholder="&nbsp;">
+             <span class="label">First Name</span>
+             <span class="border"></span>
+       </label>
+       <label for="inp" class="inp">
+            <input type="text" id="input-lastName" placeholder="&nbsp;">
+            <span class="label">Last Name</span>
+            <span class="border"></span>
+      </label>
+      <label for="inp" class="inp">
+           <input type="text" id="input-email" placeholder="&nbsp;">
+           <span class="label">Email</span>
+           <span class="border"></span>
+     </label>
+     <label for="inp" class="inp">
+          <input type="text" id="input-email" placeholder="&nbsp;">
+          <span class="label">Address</span>
+          <span class="border"></span>
+    </label>
+    <label for="inp" class="inp">
+         <input type="text" id="input-email" placeholder="&nbsp;">
+         <span class="label">Postal Code</span>
+         <span class="border"></span>
+   </label>
+</form>
 
 </div>
+
+
+<div class="flexbox-2row-item">
+      <h2 class="flexbox-1col">Appointment Information</h2>
+
+      <div class="form-item flexbox-2row-item">
+      <label for="date" class="inp" placeholder="&nbsp;">
+        <span class="label">Date</span>
+        <span class="border"></span>
+      <input class="inp-date" type ="date" id="date" name="date">
+      </div>
+
+
+      <div class="form-item flexbox-2row-item">
+      <label for="date" class="inp" placeholder="&nbsp;">
+        <span class="label">Time</span>
+        <span class="border"></span>
+      <input class="inp-date" type ="time" id="date" name="date">
+
+
+      </div>
+
+      <div class="form-item flexbox-2row-item">
+        <select class="select-box__current">
+          <option value="0">Duration:</option>
+          <option value="1">30 minutes</option>
+          <option value="1">45 minutes</option>
+          <option value="1">1 hour</option>
+          <option value="1">1.5 hours</option>
+        </select>
+      </div>
+
+</div>
+
+
+<div class="flexbox-1col">
+  <a href="payment.html"><input class="button-body button-book" type="submit" value="Submit"></a>
+</div>
+
+</div>
+
+
+  </section>
+<footer class="footer-distributed">
+    <div class="footer-left-logo" class="logo">
+        <img src="img/home/logo/light-logo@2x.png" >
+    </div>
+        <div class="footer-left">
+        <p class="footer-links">
+
+          <a href="#">Home</a>
+          <span>&#183;</span>
+          <a href="#">Services</a>
+          <span>&#183;</span>
+          <a href="#">About</a>
+          <span>&#183;</span>
+          <a href="#">Contact Us</a>
+        </p>
+
+        <p class="footer-policy-links">
+                    <a href="#">Payment</a>
+                    |
+                    <a href="#">Terms</a>
+                    |
+                    <a href="#">Privacy Statement</a>
+                </p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="adress"></i><a href="https://goo.gl/maps/AjDhi5tBGVsZ6rNV9">
+            <p>Unit 140 – 815, 1st Street,</p>
+                    <p>New Westminster, BC, V3L 2H7</p></a>
+        </div>
+
+        <div>
+          <i class="phone"></i>
+                    <p><a href="tel:+15555555555">Phone: 236-777-0376</a></p>
+        </div>
+        <div>
+          <i class="email"></i>
+          <p><a href="mailto:support@eduonix.com">support@eduonix.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          Follow Us
+        </p>
+        <div class="footer-icons">
+          <a href="#">
+                        <img src="img/home/services/SVG/insta.svg">
+                    </a>
+          <a href="#">
+                        <img src="img/home/services/SVG/twitter.svg">
+                    </a>
+          <a href="#">
+                        <img src="img/home/services/SVG/facebook.svg">
+                    </a>
+        </div>
+      </div>
+
+</footer>
+
+
 </body>
 </html>
