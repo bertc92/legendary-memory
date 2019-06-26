@@ -4,17 +4,16 @@
 <head>
 
   <meta charset="utf-8">
-  <title>Indonesian Massage Revised Styleguide</title>
+  <title>Indosage Styleguide</title>
   <link rel="stylesheet" href="https://use.typekit.net/ujm7lkp.css">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/font.css" rel="stylesheet">
   <link href="css/flexbox.css" rel="stylesheet">
+  <link href="css/styleguide.css" rel="stylesheet">
 
 </head>
 
 <body background="img/massage/ornament.png">
-  <h2>Revised for P02</h2>
-  <h1>A Style Guide for Indonesian Massage</h1>
   <nav id= "nav" role="navigation">
         <a href="#nav" title="Show navigation">Show navigation</a>
         <a href="#" title="Hide navigation">Hide navigation</a>
@@ -35,8 +34,8 @@
                     <li><a href="#combined_elements">Combined Elements</a></li>
                   </ul>
             </li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="citations.html">Citations</a></li>
+            <li><a href="sitemap.html"><span>Sitemap</span></a></li>
+            <li><a href="citations.html"><span>Citations</span></a></li>
         </ul>
     </nav>
 
@@ -53,9 +52,28 @@
 
       <h3>CSS selector:</h3>
       <p>.button-nav</p>
+	  
+	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+	margin: 2em;
+	display: inline-block;
+	padding: 0.7em 0.5em;
+	color: #FFFFFF;
+	background-color: #D6C3A9A6; /*hex representation for 65% transparent - is A6*/
+	font-size: 1.125em;
+	line-height: 1.22222222em
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: background-color 0.15s ease-out;
+	transition: background-color 0.15s ease-out;
+	  </p></pre>
 
       <h3>Sample code:</h3>
-      <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+      <pre><code>&lt;a href="#" class="button-nav"&gt;Default Button&lt;/a&gt;</code>
+	  </pre>
+	  
+
 
       <h3>Rendered element:</h3>
       <a class="button-nav" href="#">Default Button</a>
@@ -66,7 +84,15 @@
       <h2>In-text link</h2>
 
       <h3>CSS selector:</h3>
-      <p>.text-link</p>
+      <p>.text-link or a</p>
+	  
+	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+  font-weight:500;
+  color:#E0865C;
+  text-decoration:none;
+  transition: color 0.15s ease-out;
+	  </p></pre>
 
       <h3>Sample code:</h3>
       <code>&lt;a href="#" class="text-link"&gt;In-text Link&lt;/a&gt;</code>
@@ -80,6 +106,24 @@
 
       <h3>CSS selector:</h3>
       <p>.button-body</p>
+	  
+	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+	display: inline-block;
+	background-image: linear-gradient(#E0865C, #A34C35);
+	border-radius: 0.12em;
+	padding: 0.4em 1.3em 0.6em 1.3em;
+	color: white;
+	font-size: 1em;
+	line-height:normal;
+	text-align: center;
+	font-weight:500;
+	text-transform: capitalize;
+	text-decoration: NONE;
+	max-width:10em;
+	-webkit-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+	  </p></pre>
 
       <h3>Sample code:</h3>
       <code>&lt;a href="#" class="button-form"&gt;Default Button&lt;/a&gt;</code>
@@ -95,6 +139,102 @@
       <h3>CSS selector:</h3>
       <p>.text-label</p>
       <p>.field-input</p>
+	  
+	  
+	  	  <h3>CSS Stylings:</h3>
+	  <pre><p>
+  Text Labels:
+  /* Styling for text labels/fields https://codepen.io/andreasstorm/pen/gKGbxo*/
+.inp {
+      display: inline-block;
+      box-sizing:border-box;
+      position: relative;
+      margin: 0.5em 0.5em 0.5em 0em;
+      width: 100%;
+      max-width: 280px;
+      flex:1 1 50%;
+
+}
+
+/*initial hint*/
+.inp .label {
+      position: absolute;
+      top: 16px;
+      left: 0;
+      font-size: 1em;
+      color: #E0865C;
+      font-weight: 400;
+      transform-origin: 0 0;
+      transition: all 0.2s ease;
+}
+.inp .border {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      /*width: 100%;*/
+      max-width:3em;
+      background: #E0865C;
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      transition: all 0.15s ease;
+}
+.inp input {
+      -webkit-appearance: none;
+      /* width: 100%; */
+      border: 0;
+
+      max-width:10em;
+      font-family: inherit;
+      padding: 0px;
+      height: 48px;
+      font-size: 1.5em;
+      font-weight: 500;
+      border-bottom: 2px solid #E0D4B8;
+      background: none;
+      color: #2F1D0C;
+      transition: all 0.15s ease;
+}
+
+.inp-date{
+  margin:1.5em 1.5em 1.5em 0;
+  font-size:1em;
+}
+
+
+
+.inp input:hover {
+    background: rgba(224, 212, 184, 0.15);
+}
+
+.inp input:not(:placeholder-shown) + span {
+      color: #c6af7a;
+      transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+      background: none;
+      outline: none;
+}
+.inp input:focus + span {
+      color: #E0865C;
+      transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus + span + .border {
+    transform: scaleX(1);
+}
+
+
+Selectbox
+
+.select-box__current {
+  border:none;
+  border-bottom: 2px solid #E0D4B8;
+  cursor: pointer;
+  outline: none;
+  color:#E0865C;
+}
+
+	  </p></pre>
 
       <h3>Sample code:</h3>
       <code>&lt;label for="sample" class="input-text"&gt;Text Label&lt;/label&gt;</code>
