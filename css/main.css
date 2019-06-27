@@ -1,7 +1,9 @@
 html{
   margin: 0;  /*    removing space under footer*/
-  height: 100%;
-  min-height: 100%;
+  /* height: 100%; */
+  /* min-height: 100%; */
+  /* max-height:100%; */
+  max-height:100vh;
   line-height:1.6em;
 }
 
@@ -9,6 +11,7 @@ body{
   /* min-height: calc(100% - 285px); */
   /* height: 100%; */
   /* min-height: 100%; */
+  /* max-height:100vh; */
   margin: 0;
   font-family: merel,sans-serif;
   font-weight: 400;
