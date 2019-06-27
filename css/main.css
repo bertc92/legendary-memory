@@ -27,6 +27,16 @@ figure{
   margin:1em 0 1em 0;
 }
 
+iframe
+{
+  width:10em;
+  height:10em;
+  border:0;
+  margin:0;
+  overflow:hidden;
+}
+
+
 #about-banner{
   background-image:url("../img/massage/about_banner.png");
 }
@@ -239,7 +249,7 @@ textarea{
 #nav li ul:not( :hover ) li.active a {
 	background-color: #e2d7c0;
     color: #7e3c1f;
-    
+
 }
 
 @media only screen and ( max-width: 62.5em ) { /* 1000 */
@@ -265,7 +275,7 @@ textarea{
 		height: 3.125em; /* 50 */
 		text-align: left;
 		text-indent: -9999px;
-		
+
 		position: relative;
 
 	}
@@ -616,11 +626,11 @@ img{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  margin:1.5em 1em 1.5em 1em;
+  margin:3em 1em 1.5em 1em;
 }
 
 .receiptborder h2{
-  margin-top:-10px;
+  margin-top:-40px;
   margin-left:1px;
   max-width:4em;
   background:white;
@@ -797,7 +807,7 @@ span{
 }
 
 @media (max-width: 840px) {
-    
+
 	.footer-distributed .footer-left,
     .footer-distributed .footer-left-logo,
 	.footer-distributed .footer-center,
@@ -835,103 +845,98 @@ span{
 }
 
 @media(min-width:768px){
-    
-     .flexbox-nav img{ 
+
+     .flexbox-nav img{
         width: 170px;
         padding-top:1em;
         position:fixed;
         left:6%;
         top:0;
     }
-    
+
     img.right{
        padding: 1em;
        min-width: 35%;
        margin-right:0;
        max-height: 300px;
     }
-    
+
     img.right.big{
        padding: 1em;
        min-width: 30%;
        margin-left:0;
     }
-    
+
   .button-nav{
     display:block;
     position: static;
-      
-    margin: auto; 
+
+    margin: auto;
     padding: 0.5em 0.5em;
     text-align:center;
       max-width: 30%;
   }
-    
-    #staff-info img{
+
+    #staff-info h2, img{
         padding-top:1em;
         padding-bottom:0.7em;
     }
-    
-     #staff-info h2{
-        padding-top:0.5em;
-        padding-bottom:0;
-    }
-    
+
     #awards p{
     margin-right:5em;
         margin-left:5em;
     }
-    
+
     .img-banner{
         padding:0;
     }
-    
+
     body #benefits, #whyus, .intro p{
       margin:auto;
         max-width: 80%;
     }
-    
+
         flexbox-1col h1, h2{
          padding:1em;
         }
-    } 
+    }
 
     @media(min-width:1024px){
         img.right{
             max-width: 90%;
             padding-left:5em;
         }
-        
+
         h3.flexbox-1col  {
             padding-left: 6em;
         }
-        
+
          .intro h3.flexbox-1col  {
             padding-left: 6em;
         }
-        
+
         p{
          font-size: 1em;
             line-height: 1.375em;
         }
-        
+
         #benefits,  h3.flexbox-1col{
             padding-left: 0em;
-        
+
         }
-        
-    
-        
+
+
+
 /*
     #staff-info .flexbox-2row-item p{
         padding-left: 3em;
         padding-right: 3em;
         margin:auto;
         display: block;
-        
+
     }
 */
-    
+
 /*
 #staff-info .flexbox-3row-item{
     flex:1 1 50%;
@@ -947,36 +952,36 @@ span{
     padding:1em 0.5em;
     text-align:center;
   }
-    
-    .flexbox-nav img{ 
+
+    .flexbox-nav img{
         width: 0px;
     }
-    
+
     .section-body-wrapper p{
         margin: auto;
         padding-top: 4px;
         padding-bottom: 5px;
     }
-    
+
         h3{
     margin-bottom:0px;
     margin-left: 1em;
     }
-    
+
     h3, #whyus #benefits .flexbox-1col {
         padding-left: 0em;
     }
-    
+
     .intro p{
         padding-left: 3em;
         padding-right: 3em;
     }
-    
+
     .intro .flexbox-2row-item p{
        padding: 0;
     }
-    
-    
+
+
       flexbox-1col h1, h2{
          padding:0.5em;
         }
@@ -984,7 +989,7 @@ span{
 
 @media(max-width:1199px)
 {
-    
+
   #awards{
     align-items:flex-end;
     flex-direction:row;
@@ -997,7 +1002,7 @@ span{
   #awards .flexbox-3row-item{
     flex:1 1 10%;
   }
-    
+
 }
 
 @media(max-width:425px)
@@ -1006,14 +1011,14 @@ span{
       background-image:url("../img/massage/ornament-smaller.jpg");
     }
 
-    .flexbox-nav img{ 
+    .flexbox-nav img{
         width: 23px;
         padding-top:0.3em;
         position:fixed;
         left:47%;
         top:0;
     }
-    
+
   #awards{
       align-items:flex-end;
       text-align:left;
@@ -1034,29 +1039,24 @@ span{
     text-align:center;
   }
 
-/*
   #staff-info .flexbox-3row-item
   {
-      flex:1 1 100%;
-      text-align:center;
-      
+    flex:1 1 100%;
       margin:0;
       padding-top:0.3em;
   }
-*/
-    
+
     #staff-info h3, p
   {
     padding-left: 0;
       padding-bottom: 0.3em;
-      padding-top: 0.3em;
       margin: 0;
   }
 
   #benefits-top{
   /* flex-direction:column; */
   }
-    
+
   #benefits-bottom{
     /* flex-direction:column; */
   }
@@ -1065,11 +1065,11 @@ span{
     margin-bottom:0px;
     margin-left: 1em;
     }
-    
+
     h3, #whyus #benefits .flexbox-1col {
         padding-left: 0.8em;
     }
-       
+
     .section-body-wrapper p{
         margin-right: 1.5em;
         margin-left: 1.5em;
@@ -1077,33 +1077,33 @@ span{
         padding-right:0;
         padding-left:0;
     }
-    
+
     #intro p, h2{
         padding-left: 0;
         padding-right: 0;
     }
-    
+
     img.right{
         max-width: 80%;
        margin:auto;
     }
-    
+
     img.right.big{
         max-width: 70%;
        margin:auto;
         padding-top: 2em;
     }
-    
+
 /*    about page*/
     #about img.right{
         margin-right:4em;
-    
+
     }
 }
 
 @media(min-width: 425px){
     #payment .flexbox-rowrap{
-        margin-left: 5em; 
+        margin-left: 5em;
     }
 }
 /*mobile*/
@@ -1115,7 +1115,7 @@ span{
         font-size:1em ;
         line-height: 1.25em;
     }
-    
+
     h1{
 	font-size:1.625em ;
     line-height: 1.15384615em;
@@ -1131,7 +1131,7 @@ span{
         font-size:1.375rem;
         line-height: 1.11111111em;
     }
-    
+
      h4{
         font-size:1.125rem;
         line-height: 1em;
@@ -1140,7 +1140,7 @@ span{
 
     .select-box{
       margin:1em 0 1em 0;
-    }      
+    }
 }
 
 
