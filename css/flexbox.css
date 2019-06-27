@@ -44,7 +44,7 @@
 .figure-benefits img{
     display: inline-block;
 	width: 150px;
-	height: 120px;
+	height: 90px;
 	cursor: pointer;
 	margin-right: 3px;
 	margin-bottom: 5px;
@@ -70,19 +70,17 @@
   /*margin:0.5em;*/
 }
 
+/*
 .flexbox-3row-item{
-    padding-top: 0.3em;
-  padding-right: 1em;
-  padding-left: 1em;
-  flex:1 1 30%;
-  /*margin:0.3em;*/
+  padding: 0.3em 1em 1em 1em;
+  flex:1 1 20%;
+  margin:0.3em;
 }
+*/
 
 .flexbox-3row-item h3{
     text-align: center;
 }
-
-
 
 /* Media Query Stuff */
 @media (max-width: 702px){
@@ -94,28 +92,75 @@
 }
 
 
-
 @media (max-width: 600px){
       .flexbox-norowrap{
         flex-direction:column;
       }
 }
 
+@media(max-width: 768px){
+    .section-body-wrapper{
+      position:relative;
+      margin-top: 2em;
+      margin-left:3%;
+      margin-right:3%;
+      min-height:100vh;
+    }
+
+    .flexbox-3row-item{
+  padding: 0.3em 1em 1em 1em;
+  flex:1 1 30%;
+  margin:0.3em;      
+}
+    
+}
+
+@media(min-width: 769px){
+    .flexbox-3row-item{
+        padding: 0.3em 1em 1em 1em;
+        flex:1 1 20%;
+}
+    .section-body-wrapper{
+      position:relative;
+      margin-top: 2em;
+      margin-left:3%;
+      margin-right:3%;
+      min-height:100vh;
+    }
+    
+         #staff-info .flexbox-3row-item{
+        padding: 0.3em 1em 1em 1em;
+        flex:1 1 50%;
+}
+    
+    .section-body-wrapper{
+
+  margin-top: 1em;
+  margin-left:8%;
+  margin-right:8%;
+  min-height:100vh;
+}
+   
+}
+
+
+/*
 @media(max-width:425px)
 {
   .flexbox-3row-item{
     padding:0.3em 0em 0em 0em;
   }
 }
+*/
 
 
-@media (max-width: 375px){
+@media (max-width: 425px){
     .figure-benefits{
          flex-direction:column;
     }
-
+    
 .flexbox-2row-item{
-  padding: 0em;
+  padding-top: 1em;
   flex:1 1 100%;
   /*margin:0.5em;*/
 }
@@ -125,10 +170,25 @@
   flex:1 1 100%;
   /*margin:0.3em;*/
 }
+    
+  .flexbox-3row-item .figure-benefits{
+  padding: 1em;
+  /*margin:0.3em;*/
+}
+    #testimonials .flexbox-3row-item{
+     padding-top: 0em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 
 
     .flexbox-rowrap{
      flex-direction:column;
+    }
+    
+    #testimonials{
+    margin-bottom:10px;
+    
     }
     .flexbox-norowrap{
      flex-wrap:wrap;
