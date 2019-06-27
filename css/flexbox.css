@@ -95,7 +95,7 @@
 
 
 
-@media (max-width: 890px){
+@media (max-width: 600px){
       .flexbox-norowrap{
         flex-direction:column;
       }
