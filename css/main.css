@@ -14,13 +14,17 @@ body{
   font-weight: 400;
   font-style: normal;
   color:#000000;
-  background-image:url("../img/massage/ornament.png");
+  background-image:url("../img/massage/ornament1.jpg");
 }
 
 header{
   position:sticky;
   top:0px;
   z-index:20;
+}
+
+figure{
+  margin:1em 0 1em 0;
 }
 
 #about-banner{
@@ -139,7 +143,7 @@ textarea{
 
 /* navbar stuff */
 #nav {
-    background: #D6C3A9A6;
+    background: #f8f4e9;
     width:100%;
     display:flex;
     flex-direction:row;
@@ -150,18 +154,19 @@ textarea{
 #nav > a {
     display: none;
 }
+
 #nav li {
     /* margin-right: 1em; */
     position: relative;
 }
 
 #nav li a {
-    color: #fff;
+    color: #f8f4e9;
     display: block;
 }
 
 #nav li a:active {
-    background-color: #c00 !important;
+    background-color: #653226 !important;
 }
 
 /*arrow*/
@@ -170,7 +175,7 @@ textarea{
     height: 0;
     border: 0.313em solid transparent; /*  5 */
   	border-bottom: none;
-  	border-top-color: #efa585;
+  	border-top-color: #A15442;
   	content: '';
   	vertical-align: middle;
   	display: inline-block;
@@ -190,8 +195,8 @@ textarea{
 }
 
 #nav > ul > li > a {
-
-  padding: 0em;
+  padding-right: 0.5em;
+    padding-left: 0.5em;
 	height: 100%;
 	font-size: 1.5em; /* 24 */
 	line-height: 2.5em; /* 60 (24) */
@@ -205,7 +210,7 @@ textarea{
 
 #nav > ul > li:hover > a,
 #nav > ul:not( :hover ) > li.active > a {
-	background-color: #A15442;
+	background-color: #f8f4e9;
 }
 
 /* second level */
@@ -221,6 +226,7 @@ textarea{
 	left: 0;
 	right: 0;
 }
+
 #nav li:not( :first-child ):hover ul {
 	left: -1px;
 }
@@ -231,7 +237,9 @@ textarea{
 }
 #nav li ul li a:hover,
 #nav li ul:not( :hover ) li.active a {
-	background-color: #E0D4B8;
+	background-color: #e2d7c0;
+    color: #7e3c1f;
+
 }
 
 @media only screen and ( max-width: 62.5em ) { /* 1000 */
@@ -257,14 +265,14 @@ textarea{
 		height: 3.125em; /* 50 */
 		text-align: left;
 		text-indent: -9999px;
-		background-color: #A15442;
+
 		position: relative;
 
 	}
 	#nav > a:before,
 	#nav > a:after {
 		position: absolute;
-		border: 2px solid #fff;
+		border: 2px solid #A15442;
 		top: 35%;
 		left: 25%;
 		right: 25%;
@@ -279,7 +287,7 @@ textarea{
 	}
 	/* first level */
 	#nav > ul {
-    background: #D6C3A9;
+    background: #ede4d8;
 		height: auto;
 		display: none;
 		position: absolute;
@@ -608,11 +616,11 @@ img{
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  margin:1.5em 1em 1.5em 1em;
+  margin:3em 1em 1.5em 1em;
 }
 
 .receiptborder h2{
-  margin-top:-10px;
+  margin-top:-40px;
   margin-left:1px;
   max-width:4em;
   background:white;
@@ -661,7 +669,8 @@ footer-distributed{
 }
 
 span{
-	color:  #E0865C;
+	color:  #A15442;
+    font-size: 0.8em;
 }
 
 /* Footer nav center */
@@ -775,7 +784,6 @@ span{
 
 
 /* media query stuff */
-
 @media(max-width:892px)
 {
   #benefits-top{
@@ -786,12 +794,10 @@ span{
   #benefits-bottom{
     flex-direction:row;
   }
-
 }
 
-
-
 @media (max-width: 840px) {
+
 	.footer-distributed .footer-left,
     .footer-distributed .footer-left-logo,
 	.footer-distributed .footer-center,
@@ -826,35 +832,154 @@ span{
       display: inline-block;
     }
 
+}
 
+@media(min-width:768px){
+
+     .flexbox-nav img{
+        width: 170px;
+        padding-top:1em;
+        position:fixed;
+        left:6%;
+        top:0;
+    }
+
+    img.right{
+       padding: 1em;
+       min-width: 35%;
+       margin-right:0;
+       max-height: 300px;
+    }
+
+    img.right.big{
+       padding: 1em;
+       min-width: 30%;
+       margin-left:0;
+    }
+
+  .button-nav{
+    display:block;
+    position: static;
+
+    margin: auto;
+    padding: 0.5em 0.5em;
+    text-align:center;
+      max-width: 30%;
+  }
+
+    #staff-info h2, img{
+        padding-top:1em;
+        padding-bottom:0.7em;
+    }
+
+    #awards p{
+    margin-right:5em;
+        margin-left:5em;
+    }
+
+    .img-banner{
+        padding:0;
+    }
+
+    body #benefits, #whyus, .intro p{
+      margin:auto;
+        max-width: 80%;
+    }
+
+        flexbox-1col h1, h2{
+         padding:1em;
+        }
+    }
+
+    @media(min-width:1024px){
+        img.right{
+            max-width: 90%;
+            padding-left:5em;
+        }
+
+        h3.flexbox-1col  {
+            padding-left: 6em;
+        }
+
+         .intro h3.flexbox-1col  {
+            padding-left: 6em;
+        }
+
+        p{
+         font-size: 1em;
+            line-height: 1.375em;
+        }
+
+        #benefits,  h3.flexbox-1col{
+            padding-left: 0em;
+
+        }
 
 
 
 /*
-    img {
-    display: inline-block;
-	min-width: 100px;
-	min-height: 100px;
-	cursor: pointer;
-	margin-right: 3px;
-	margin-bottom: 5px;
+    #staff-info .flexbox-2row-item p{
+        padding-left: 3em;
+        padding-right: 3em;
+        margin:auto;
+        display: block;
+
     }
 */
-}
 
+/*
+#staff-info .flexbox-3row-item{
+    flex:1 1 50%;
+  }
+*/
+}
 
 @media(max-width:768px)
 {
   .button-nav{
     display:block;
     margin:1em 0 1em 0;
-    padding:1.5em 0.5em;
+    padding:1em 0.5em;
     text-align:center;
   }
+
+    .flexbox-nav img{
+        width: 0px;
+    }
+
+    .section-body-wrapper p{
+        margin: auto;
+        padding-top: 4px;
+        padding-bottom: 5px;
+    }
+
+        h3{
+    margin-bottom:0px;
+    margin-left: 1em;
+    }
+
+    h3, #whyus #benefits .flexbox-1col {
+        padding-left: 0em;
+    }
+
+    .intro p{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .intro .flexbox-2row-item p{
+       padding: 0;
+    }
+
+
+      flexbox-1col h1, h2{
+         padding:0.5em;
+        }
 }
 
 @media(max-width:1199px)
 {
+
   #awards{
     align-items:flex-end;
     flex-direction:row;
@@ -867,12 +992,26 @@ span{
   #awards .flexbox-3row-item{
     flex:1 1 10%;
   }
+
 }
 
 @media(max-width:425px)
 {
+    body{
+      background-image:url("../img/massage/ornament-smaller.jpg");
+    }
+
+    .flexbox-nav img{
+        width: 23px;
+        padding-top:0.3em;
+        position:fixed;
+        left:47%;
+        top:0;
+    }
+
   #awards{
-    align-items:flex-end;
+      align-items:flex-end;
+      text-align:left;
     /* flex-direction:column;
     flex-wrap:nowrap; */
   }
@@ -893,21 +1032,75 @@ span{
   #staff-info .flexbox-3row-item
   {
     flex:1 1 100%;
+      margin:0;
+      padding-top:0.3em;
+  }
+
+    #staff-info h3, p
+  {
+    padding-left: 0;
+      padding-bottom: 0.3em;
+      margin: 0;
   }
 
   #benefits-top{
   /* flex-direction:column; */
-
   }
 
   #benefits-bottom{
     /* flex-direction:column; */
   }
+
+    h3{
+    margin-bottom:0px;
+    margin-left: 1em;
+    }
+
+    h3, #whyus #benefits .flexbox-1col {
+        padding-left: 0.8em;
+    }
+
+    .section-body-wrapper p{
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+        padding-top: 4px;
+        padding-right:0;
+        padding-left:0;
+    }
+
+    #intro p, h2{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    img.right{
+        max-width: 80%;
+       margin:auto;
+    }
+
+    img.right.big{
+        max-width: 70%;
+       margin:auto;
+        padding-top: 2em;
+    }
+
+/*    about page*/
+    #about img.right{
+        margin-right:4em;
+
+    }
 }
 
+@media(min-width: 425px){
+    #payment .flexbox-rowrap{
+        margin-left: 5em;
+    }
+}
 /*mobile*/
 @media (min-width: 320px){
-
+    .flexbox-1col .button-body{
+        margin-left: 60%;
+    }
     body{
         font-size:1em ;
         line-height: 1.25em;
@@ -919,20 +1112,91 @@ span{
     }
 
     h2{
-        font-size: 1.375em;
+        font-size: 1.625em;
         line-height: 1.13636364em;
+        margin: 10px;
     }
 
     h3{
-        font-size:1.125rem;
+        font-size:1.375rem;
         line-height: 1.11111111em;
+    }
+
+     h4{
+        font-size:1.125rem;
+        line-height: 1em;
+        margin:0;
     }
 
     .select-box{
       margin:1em 0 1em 0;
     }
-
-
-
 }
-/* navbar menu */
+
+
+/* cards service views */
+p.small {
+  font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.go-corner {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 28px;
+  overflow: hidden;
+  bottom: 0;
+  right: 0;
+  background-color: #A15442;
+  border-radius: 0 4px 32px 32px;
+}
+
+.go-corner:hover {
+  color:antiquewhite;
+}
+
+.card {
+  display: block;
+  top: 0px;
+  position: relative;
+  max-width: 262px;
+  border-radius: 4px 4px 25px 25px;
+  padding: 1em 1em 30px 1em;
+  margin: auto;
+  text-decoration: none;
+  z-index: 0;
+  overflow: hidden;
+  border: 1px solid #A1544265;
+}
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
+  top: -4px;
+  border: 1px  solid #cccccc;
+  background-color: white;
+}
+
+.card:hover:before {
+  -webkit-transform: scale(2.15);
+          transform: scale(2.15);
+}
+
+
+/*map*/
+        .mapouter{
+            position:relative;
+            text-align:right;
+            height:357px;
+            width:466px;
+        }
+        .gmap_canvas {
+            overflow:hidden;
+            background:none!important;
+            height:357px;
+            width:466px;
+        }
