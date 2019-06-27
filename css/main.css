@@ -867,9 +867,14 @@ span{
       max-width: 30%;
   }
     
-    #staff-info h2, img{
+    #staff-info img{
         padding-top:1em;
         padding-bottom:0.7em;
+    }
+    
+     #staff-info h2{
+        padding-top:0.5em;
+        padding-bottom:0;
     }
     
     #awards p{
@@ -1029,17 +1034,22 @@ span{
     text-align:center;
   }
 
+/*
   #staff-info .flexbox-3row-item
   {
-    flex:1 1 100%;
+      flex:1 1 100%;
+      text-align:center;
+      
       margin:0;
       padding-top:0.3em;
   }
+*/
     
     #staff-info h3, p
   {
     padding-left: 0;
       padding-bottom: 0.3em;
+      padding-top: 0.3em;
       margin: 0;
   }
 
