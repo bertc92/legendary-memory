@@ -32,23 +32,17 @@ figure{
 
 iframe
 {
-  width:10em;
-  height:10em;
+  max-width:100%
   border:0;
   margin:0;
   overflow:hidden;
-}
-
-
-#about-banner{
-  background-image:url("../img/massage/about_banner.png");
 }
 
 .button-nav {
       margin: 2em;
       display: inline-block;
       padding: 0.7em 0.5em;
-      color: #FFFFFF;
+      color: #A15442;
       background-color: #D6C3A9A6; /*hex representation for 65% transparent - is A6*/
 
       font-size: 1.125em;
@@ -182,19 +176,21 @@ textarea{
     background-color: #653226 !important;
 }
 
-/*arrow*/
+/*
+arrow
 #nav span:after {
     width: 0;
     height: 0;
-    border: 0.313em solid transparent; /*  5 */
+    border: 0.313em solid transparent; 
   	border-bottom: none;
   	border-top-color: #A15442;
   	content: '';
   	vertical-align: middle;
   	display: inline-block;
   	position: relative;
-  	right: -0.13em; /* 5 */
+  	right: -0.13em; 
 }
+*/
 /* first level */
 #nav > ul {
 	height: 3.75em; /* 60 */
@@ -880,10 +876,16 @@ span{
       max-width: 30%;
   }
 
-    #staff-info h2, img{
+     #staff-info img{
         padding-top:1em;
         padding-bottom:0.7em;
     }
+    
+     #staff-info h2{
+        padding-top:0.5em;
+        padding-bottom:0;
+    }
+    
 
     #awards p{
     margin-right:5em;
@@ -928,23 +930,6 @@ span{
 
         }
 
-
-
-/*
-    #staff-info .flexbox-2row-item p{
-        padding-left: 3em;
-        padding-right: 3em;
-        margin:auto;
-        display: block;
-
-    }
-*/
-
-/*
-#staff-info .flexbox-3row-item{
-    flex:1 1 50%;
-  }
-*/
 }
 
 @media(max-width:768px)
@@ -1010,6 +995,12 @@ span{
 
 @media(max-width:425px)
 {
+    
+    iframe{
+        text-align: center;
+        margin:auto;
+    }
+      
     body{
       background-image:url("../img/massage/ornament-smaller.jpg");
     }
@@ -1042,20 +1033,22 @@ span{
     text-align:center;
   }
 
+/*
   #staff-info .flexbox-3row-item
   {
     flex:1 1 100%;
       margin:0;
       padding-top:0.3em;
   }
+*/
 
     #staff-info h3, p
   {
     padding-left: 0;
       padding-bottom: 0.3em;
+      padding-top: 0.3em;
       margin: 0;
   }
-
   #benefits-top{
   /* flex-direction:column; */
   }
@@ -1111,6 +1104,13 @@ span{
 }
 /*mobile*/
 @media (min-width: 320px){
+    
+     .mapouter{
+            max-width:320px;
+        }
+        .gmap_canvas {
+            max-width:320px;
+    }
     .flexbox-1col .button-body{
         margin-left: 60%;
     }
