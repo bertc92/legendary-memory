@@ -16,7 +16,19 @@
 <body>
   <header>
     <nav class="flexbox-nav" id= "nav">
-      <img src="img/home/logo/head-logo-simple-dark.svg " srcset="img/home/logo/head-logo-text-dark.svg 300w" sizes="(max-width:726px) 300px" alt="The Indosage Brand Logo">
+
+      <picture> <!-- https://internetingishard.com/html-and-css/responsive-images/ !-->
+        <source media="(min-width:426px)"
+        srcset="img/home/logo/head-logo-text-dark.svg"/>
+        <source media="(max-width:425px)"
+        srcset="img/home/logo/head-logo-simple-dark.svg"/>
+        <img src="img/home/logo/head-logo-text-dark.svg"/>
+      </picture>
+
+      <!-- <img src="img/home/logo/head-logo-text-dark.svg" srcset="img/home/logo/head-logo-simple-dark.svg 122w,
+              img/home/logo/head-logo-text-dark.svg 300w"
+      sizes="(max-width:425px) 122w,
+      (max-width:726px) 300px" alt="The Indosage Brand Logo"> -->
             <a href="#nav" title="Show navigation">Show navigation</a>
             <a href="#" title="Hide navigation">Hide navigation</a>
             <ul>
@@ -58,8 +70,8 @@
 
   <section class="section-body-wrapper">
 
+    <h2> An Indonesian Massage Experience</h2>
   <section class="flexbox-rowrap intro">
-  <h2> An Indonesian Massage Experience</h2>
       <h3 class="flexbox-1col">History</h3>
   <div class="flexbox-2row-item">
 

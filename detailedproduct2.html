@@ -16,8 +16,14 @@
 <body>
   <header>
     <nav class="flexbox-nav" id= "nav">
-      <img src="img/home/logo/head-logo-simple-dark.svg" srcset="img/home/logo/head-logo-text-dark.svg 300w" sizes="(max-width:726px) 300px" alt="The Indosage Brand Logo">
-            <a href="#nav" title="Show navigation">Show navigation</a>
+      <picture> <!-- https://internetingishard.com/html-and-css/responsive-images/ !-->
+        <source media="(min-width:426px)"
+        srcset="img/home/logo/head-logo-text-dark.svg"/>
+        <source media="(max-width:425px)"
+        srcset="img/home/logo/head-logo-simple-dark.svg"/>
+        <img src="img/home/logo/head-logo-text-dark.svg"/>
+      </picture>
+                  <a href="#nav" title="Show navigation">Show navigation</a>
             <a href="#" title="Hide navigation">Hide navigation</a>
             <ul>
                 <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
@@ -89,7 +95,7 @@
         <figcaption><p>Improves blood circulation and lymphatic system</p></figcaption>
     </figure>
 </div>
-    <div class="flexbox-norowrap flexbox-1col">
+    <div class="flexbox-norowrap flexbox-1col two-benefits">
     <figure class="flexbox-2row-item  figure-benefits">
        <img src="img/products/SVG/sleepldpi.svg" alt="Improves Sleep Quality Illustration">
         <figcaption><p>Improves the quality of sleep.</p></figcaption>
