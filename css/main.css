@@ -127,7 +127,7 @@ h2{
     font-weight: 500;
     font-size:2.25em;
     line-height: 1.25em;
-    margin: 1.75em 0em 1.75em 0em;
+    margin: 0.5em 0em 0.5em 0em;
 }
 
 h3{
@@ -952,7 +952,7 @@ span{
         padding:0;
     }
 
-    body #benefits, #whyus, .intro{
+    body #benefits, #whyus, .intro, #testimonials{
       margin:auto;
         max-width: 80%;
     }
@@ -1049,6 +1049,8 @@ span{
 
 }
 
+
+
 @media(min-width:1024px)
 {
   .two-benefits
@@ -1057,6 +1059,20 @@ span{
   }
 }
 
+@media(min-width:770px)
+{
+  #learnmore
+  {
+    max-width:none;
+  }
+}
+@media(min-width:1155px)
+{
+  #learnmore
+  {
+    max-width:30%;
+  }
+}
 @media(max-width:425px)
 {
 
