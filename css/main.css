@@ -637,6 +637,7 @@ img{
   margin-left:1px;
   max-width:4em;
   background:white;
+  padding:0.5em 0 0 0;
 }
 
 /* responsive footer*/
