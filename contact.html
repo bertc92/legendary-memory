@@ -15,9 +15,15 @@
 
 <body>
     <header>
-    <nav class="flexbox-nav" id= "nav">
-      <img src="img/home/logo/head-logo-simple-dark.svg" srcset="img/home/logo/head-logo-text-dark.svg 300w" sizes="(max-width:726px) 300px" alt="The Indosage Brand Logo">
-                <a href="#nav" title="Show navigation">Show navigation</a>
+    <nav class="flexbox-nav" id="nav">
+      <picture> <!-- https://internetingishard.com/html-and-css/responsive-images/ !-->
+        <source media="(min-width:426px)"
+        srcset="img/home/logo/head-logo-text-dark.svg"/>
+        <source media="(max-width:425px)"
+        srcset="img/home/logo/head-logo-simple-dark.svg"/>
+        <img src="img/home/logo/head-logo-text-dark.svg"/>
+      </picture>
+                      <a href="#nav" title="Show navigation">Show navigation</a>
             <a href="#" title="Hide navigation">Hide navigation</a>
             <ul>
                 <li><a href="index.html" aria-haspopup="true"><span>Home</span></a>
@@ -56,10 +62,12 @@
 
     <img class="img-banner" src="img/massage/contact_banner5x.jpg" srcset="img/massage/contact_banner1.jpg 1440w" sizes="(max-width:426px) 426px" alt="The banner for Indosage's Contact page">
 
-  <section class="section-body-wrapper">
+  <section class="section-body-wrapper flexbox-rowrap">
 
-    <section id="leavereview" class="flexbox-rowrap">
-      <h1 class="flexbox-1col" id="about">Leave a review </h1>
+    <h1 id="contactus" class="flexbox-1col">Contact us</h1>
+
+    <section id="leavereview" class="flexbox-2row-item">
+      <h2 class="flexbox-1col" id="about">Leave a review </h2>
         <p class="flexbox-1col">Have you used our services recently? Please, leave us a review and let us know how we did! Your feedback is appreciated.</p>
 
 
@@ -80,7 +88,7 @@
              <span class="border"></span>
        </label>
      <div id="rating" class="flexbox-1col">
-       <h3>How did we do?</h3>
+       <h3 id="howdidwedo">How did we do?</h3>
        <input type="radio" id="1star" name="rating" value="1star"
               checked>
        <label for="1star">Abysmal</label>
@@ -110,23 +118,27 @@
   </form>
 
 
-      <div class="flexbox-3row-item">
-             <h3 id="map">Vist US</h3>
+      <div id="contactbutton" class="flexbox-1col">
+          <a  class="button-body" href="#">Submit</a>
+      </div>
+</section>
+
+
+      <section  id="map" class="flexbox-2row-item">
+             <h2>Vist Us</h2>
     <!--The div element for the map  from https://www.embedgooglemap.net/-->
 <div class="mapouter">
     <div class="gmap_canvas">
         <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=vancouver%20downtown&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
     </div>
-          </div>
+</div>
       <p>massages@indosage.com</p>
       <p>236-777-0376</p>
-    </div>
-    <div class="flexbox-1col">
-        <a class="button-body" href="#">Submit</a>
-      </div>
+</div>
+
+
+
     </section>
-
-
 
 
 </section>
