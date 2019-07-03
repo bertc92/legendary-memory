@@ -952,9 +952,9 @@ span{
         padding:0;
     }
 
-    body #benefits, #whyus, .intro, #testimonials, #productdesc{
+    body #benefits, #whyus, .intro, #testimonials, #productdesc, #productdesc2{
       margin:auto;
-        max-width: 80%;
+      max-width: 80%;
     }
 
         flexbox-1col h1, h2{
@@ -994,9 +994,13 @@ span{
 @media(max-width:1024px){
 
      #productdesc img{
-/*            min-width:180px;*/
-         max-height: 30%;
-/*            margin:auto;*/
+/*         min-width: 300px;*/
+         max-height: 334px;
+        }
+}
+ #productdesc2 img{
+/*         min-width: 300px;*/
+      max-height: 400px;
         }
 }
 
@@ -1130,6 +1134,11 @@ span{
   }
 
     #productdesc img{
+        max-width:200px;
+        margin:auto;
+    }
+    
+    #productdesc2 img{
         max-width:200px;
         margin:auto;
     }
